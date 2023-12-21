@@ -1,0 +1,58 @@
+@use "global" as *;
+
+.top-voice__inner {
+    position: relative;
+}
+
+.top-voice__inner::before {
+    @include mq("md") {
+        content: '';
+        position: absolute;
+        top: -123px;
+        left: 0;
+        left: calc(53% - min(50vw, rem(650)));
+        width: rem(301);
+        height: rem(138);
+        background-image: url(/assets/images/top/キンギョハナダイ-top-voice.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+    }
+}
+
+.top-voice__inner::after {
+    @include mq("md") {
+        content: '';
+        position: absolute;
+        bottom: -72px;
+        right: calc(60% - min(50vw, rem(650)));
+        width: rem(71);
+        height: rem(162);
+        background-image: url(/assets/images/top/イバラタツ-top-voice.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+    }
+}
+
+.top-voice__title {
+    text-align: center;
+}
+
+.top-voice__list {
+    // margin-top: rem(40);
+    margin-top: 46px;
+
+    @include mq("md") {
+        margin-top: rem(34);
+    }
+}
+
+.top-voice__button-wrapper {
+    text-align: center;
+    margin-top: rem(40);
+
+    @include mq("md") {
+        margin-top: rem(80);
+    }
+}

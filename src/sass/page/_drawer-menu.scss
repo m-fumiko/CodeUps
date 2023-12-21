@@ -1,0 +1,40 @@
+@use "global" as *;
+
+.drawer-menu {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.drawer-menu__item-title {
+    // margin-top: rem(40);
+    padding-top: rem(20);
+    padding-bottom: rem(20);
+    color: $color-white;
+    font-size: rem(16);
+    font-weight: $bold;
+    font-family: 'Noto Sans JP',sans-serif;
+    line-height: 1;
+    padding-left: 1em;
+    text-indent: -1em;
+}
+
+.drawer-menu__item-title::before {
+    margin-right: rem(4);
+    align-items: center;
+    content: url(/assets/images/common/_ヒトデ.svg);
+}
+
+.drawer-menu__item {
+    padding-top: rem(12);
+    padding-bottom: rem(12);
+    padding-left: rem(22);
+    font-size: rem(16);
+    font-weight: 300;
+    font-family: 'Noto Sans JP',sans-serif;
+    line-height: 1;
+    color: $color-white;
+}
+
+.drawer-menu__wrap {
+    margin-top: rem(5);
+}

@@ -1,0 +1,21 @@
+@use "global" as *;
+
+.color-box{
+    position: relative;
+    // width: 80%;
+    // margin: 30px auto 30px;
+    // margin: auto;
+}
+.color-box .color{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background-color: #408F95;
+}
+.color-box img{
+    display: block;
+    width: 100%;
+}

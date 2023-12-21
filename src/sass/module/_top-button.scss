@@ -1,0 +1,93 @@
+@use "global" as *;
+
+.top-button {
+    width: rem(48);
+    height: rem(48);
+    cursor: pointer;
+
+    @include mq("md") {
+        width: rem(80);
+        height: rem(80);
+    }
+}
+
+
+
+// .page-top {
+//     bottom: 0;
+//     padding: rem(20);
+//     position: fixed;
+//     right: 0;
+//     z-index: 1000;
+// }
+
+// .page-top img {
+//     width: rem(48);
+//     height: rem(48);
+//     @include mq("md") {
+//         width: rem(80);
+//         height: rem(80);
+//     }
+// }
+
+
+
+// .top-button::before {
+//     content: '';
+//     position: absolute;
+//     top: 32%;
+//     right:0;
+//     width: rem(48);
+//     height: rem(48);
+//     // width: 100%;
+//     // height: 100%;
+//     background-image: url(/assets/images/common/top.svg);
+
+//     @include mq("md") {
+//         top: 32%;
+//         right:0;
+//         width: rem(80);
+//         height: rem(80);
+//     }
+// }
+
+// .top-button::before {
+//     background-image: url(/assets/images/common/top.svg);
+//     content: '';
+//     position: absolute;
+//     top: 32%;
+//     left: 42%;
+// }
+
+// .top-button::before {
+//     content: "";
+//     position: absolute;
+//     top: 32%;
+//     left: 42%;
+//     transform: translate(-50%, -50%) rotate(-45deg);
+//     width: 10px;
+//     height: 1px;
+//     border-top: solid 1px $color-green;
+//     border-radius: rem(1);
+
+//     @include mq("md") {
+//         width: 6px;
+//         height: 6px;
+//     }
+// }
+
+// .top-button::after {
+//     content: "";
+//     position: absolute;
+//     top: 54%;
+//     left: 20%;
+//     width: rem(28);
+//     height: 1px;
+//     background-color: $color-green;
+//     transform: rotate(90deg);
+//     border-radius: rem(1);
+
+//     @include mq("md") {
+//         width: 13px;
+//     }
+// }
