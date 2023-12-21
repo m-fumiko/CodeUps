@@ -1,7 +1,7 @@
 
 jQuery(function ($) { // この中であればWordpressでも「$」が使用可能になる
 
-    // ページ内スクロール、ヘッダーの高さ取得
+    // ヘッダー背景色変更
     $(function () {
         const headerHeight = $(".js-header").height();
         $('a[href^="#"]').click(function () {
@@ -14,6 +14,15 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
             return false;
         });
     });
+
+    jQuery(window).on('scroll', function () {
+        if (jQuery('.js-mv').height() < jQuery(this).scrollTop()) {
+            jQuery('.js-header').addClass('transform');
+        } else {
+            jQuery('.js-header').removeClass('transform');
+        }
+    });
+
 
     // ハンバーガーメニュー
     $(".js-hamburger").on("click", function () {
@@ -146,6 +155,7 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
         // ボタンクリックでトップに戻る
         $(".js-top-button").click(function () {
             $("html, body").animate({ scrollTop: 0 }, 500);
+            return false;
         });
     });
 });

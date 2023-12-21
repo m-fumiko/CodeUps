@@ -9,13 +9,7 @@
     }
 }
 
-.footer-menu__left {
-    @include mq("md") {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
+.footer-menu__left,
 .footer-menu__right {
     @include mq("md") {
         display: grid;
@@ -23,13 +17,33 @@
     }
 }
 
-.footer-menu__wrap + .footer-menu__wrap {
+.footer-menu__left {
+    padding-left: rem(22);
+
     @include mq("md") {
-        margin-left: 10px;
+        padding-left: rem(33);
     }
 }
 
-.footer-menu__item-title {
+.footer-menu__left .footer-menu__wrap:nth-child(2) {
+    @include mq("md") {
+        margin-left: rem(27);
+    }
+}
+
+.footer-menu__right .footer-menu__wrap:nth-child(2) {
+    @include mq("md") {
+        margin-left: rem(13);
+    }
+}
+
+.footer-menu__right {
+    margin-left: rem(40);
+}
+
+.footer-menu__item-title a {
+    position: relative;
+    display: block;
     padding-top: rem(20);
     padding-bottom: rem(20);
     color: $color-white;
@@ -37,39 +51,40 @@
     font-weight: $bold;
     font-family: 'Noto Sans JP',sans-serif;
     line-height: 1;
-    padding-left: 1em;
-    text-indent: -1em;
 }
 
-.footer-menu__item-title::before {
-    margin-right: rem(4);
-    align-items: center;
-    content: url(/assets/images/common/_ヒトデ.svg);
+.footer-menu__item-title a::before {
+    position: absolute;
+    content: '';
+    background: url(/assets/images/common/_ヒトデ.svg);
+    width: rem(18);
+    height: rem(18);
+    left: rem(-22);
+    top: rem(14);
+    z-index: 100;
 }
 
-.footer-menu__item {
+.footer-menu__item a {
+    display: block;
     padding-top: rem(12);
     padding-bottom: rem(12);
-    padding-left: rem(22);
     font-size: rem(16);
     font-weight: 300;
     font-family: 'Noto Sans JP',sans-serif;
     line-height: 1;
     color: $color-white;
+}
 
+.footer-menu__wrap-top {
     @include mq("md") {
-        padding-left: rem(28);
+        margin-top: rem(5);
     }
 }
 
 .footer-menu__wrap {
-    margin-top: rem(5);
-}
-
-.footer-menu__right {
-    margin-left: rem(14);
+    margin-top: rem(9);
 
     @include mq("md") {
-        margin-left: 0;
+        margin-top: rem(5);
     }
 }

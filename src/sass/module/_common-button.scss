@@ -15,6 +15,10 @@
     z-index: 1;
 }
 
+.common-button:hover {
+    opacity: 1;
+}
+
 .common-button::before {
     background: $color-white;
     position: absolute;

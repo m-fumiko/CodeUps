@@ -3,9 +3,14 @@
 .header {
     height: rem(80);
     background-color: rgba(40, 47, 53, 0.68);
+    transition: background-color .3s;
     @include mq("md") {
         height: rem(90);
     }
+}
+
+.header.transform {
+    background-color: $color-gray;
 }
 
 .header__inner {
@@ -48,6 +53,10 @@
 .header__nav {
     padding-left: rem(10);
     height: inherit;
+}
+
+.header__nav a:hover {
+    opacity: 1;
 }
 
 .header__nav-list {
