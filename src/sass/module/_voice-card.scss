@@ -47,6 +47,7 @@
     display: inline-block;
     font-size: rem(12);
     font-weight: $regular;
+    font-family: 'Noto Sans JP', sans-serif;
     line-height: 1;
     color: $color-green;
     border: solid rem(1) $color-green;
@@ -60,6 +61,7 @@
     margin-top: rem(4);
     font-size: rem(16);
     font-weight: $medium;
+    font-family: 'Noto Sans JP', sans-serif;
     line-height: calc(23/16);
     border-bottom: solid rem(1) $color-green;
 
@@ -97,6 +99,7 @@
     margin-top: rem(16);
     font-size: rem(16);
     font-weight: $regular;
+    font-family: 'Noto Sans JP', sans-serif;
     line-height: calc(24/16);
 
     @include mq("md") {

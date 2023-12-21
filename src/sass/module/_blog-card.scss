@@ -36,9 +36,11 @@
 .blog-card__title {
     font-size: rem(16);
     font-weight: $medium;
+    font-family: 'Noto Sans JP', sans-serif;
     border-bottom: solid 1px $color-green;
 }
 
 .blog-card__text {
     margin-top: rem(16);
+    font-family: 'Noto Sans JP', sans-serif;
 }

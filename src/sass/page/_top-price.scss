@@ -7,7 +7,7 @@
 
     @include mq("md") {
         padding-top: rem(100);
-        padding-bottom: rem(102);
+        padding-bottom: rem(100);
     }
 }
 
@@ -52,8 +52,19 @@
     }
 }
 
+.top-price__img-sp,
+.top-price__img-pc {
+    width: 100%;
+}
+
 .top-price__img-sp img{
     aspect-ratio: 345/227;
+    width: 100%;
+    object-fit: cover;
+}
+
+.top-price__img-pc img{
+    aspect-ratio: 492/746;
     width: 100%;
     object-fit: cover;
 }
@@ -94,25 +105,11 @@
     }
 }
 
-// .top-price__item-content + .top-price__item-content {
-//     margin-top: 8px;
-// }
-
-// .top-price__item-contents {
-//     margin-top: 8px;
-// }
-// .top-price__item-text {
-//     font-size: 14px;
-//     font-weight: $regular;
-//     font-family: 'Noto Sans JP',sans-serif;
-//     line-height: 24/14;
-// }
-
 .top-price__button-wrapper {
     margin-top: rem(40);
     text-align: center;
 
     @include mq("md") {
-        margin-top: rem(80);
+        margin-top: rem(64);
     }
 }
