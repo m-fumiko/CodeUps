@@ -22,7 +22,6 @@
         left: 0;
         width: rem(437);
         height: rem(201);
-        // 39.8125rem=637px←どこから見た値？
         left: calc(53% - min(50vw, rem(650)));
         background-image: url(/assets/images/top/キンギョハナダイ-top-blog.svg);
         background-repeat: no-repeat;
@@ -37,7 +36,7 @@
 
 .top-blog__list {
     margin-top: rem(30);
-    max-width: 333px;
+    max-width: rem(333);
     margin: 0 auto;
 
     @include mq("md") {

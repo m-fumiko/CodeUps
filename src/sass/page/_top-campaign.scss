@@ -1,11 +1,6 @@
 @use "global" as *;
 
-// .top-campaign__flex-container {
-//     display: flex;
-//     justify-content: space-between;
-// }
 .top-campaign__inner {
-    // 矢印配置のため
     position: relative;
 }
 
@@ -23,27 +18,20 @@
     display: none;
 }
 
-// .top-campaign__container {
-//     position: relative;
-// }
-
 .top-campaign__title {
     text-align: center;
 }
 
 // 前後矢印
 .top-campaign__swiper-button {
-    // display: none;
 
     @include mq("md") {
         display: flex;
-        // gap: rem(80);
         position: absolute;
         top: rem(23);
         right: rem(16);
         max-width: rem(259);
         width: 100%;
-        // height: auto;
         cursor: pointer;
     }
 }
@@ -59,8 +47,8 @@
         background-repeat: no-repeat;
         background-size: contain;
         content: '';
-        height: 80px;
-        width: 80px;
+        height: rem(80);
+        width: rem(80);
         margin: auto;
     }
 }
@@ -76,8 +64,8 @@
         background-repeat: no-repeat;
         background-size: contain;
         content: '';
-        height: 80px;
-        width: 80px;
+        height: rem(80);
+        width: rem(80);
         margin: auto;
     }
 }
@@ -105,13 +93,11 @@
     }
 }
 
-
 .top-campaign__card {
     margin-left: rem(14);
 }
 
 .top-campaign__button-wrapper {
-    // margin-top: rem(38);
     margin-top: rem(36);
     text-align: center;
 
