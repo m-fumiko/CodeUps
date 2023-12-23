@@ -43,7 +43,7 @@
 
 .top-campaign__swiper-button-prev.swiper-button-prev::after {
     @include mq("md") {
-        background-image: url(../images/top/prev.svg);
+        background-image: url(../../../assets/images/top/prev.svg);
         background-repeat: no-repeat;
         background-size: contain;
         content: '';
@@ -60,7 +60,7 @@
 
 .top-campaign__swiper-button-next.swiper-button-next::after {
     @include mq("md") {
-        background-image: url(..images/top/サンゴとイソギンチャク.svg);
+        background-image: url(../../../assets/images/top/next.svg);
         background-repeat: no-repeat;
         background-size: contain;
         content: '';
