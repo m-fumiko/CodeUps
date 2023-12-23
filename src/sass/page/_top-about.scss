@@ -1,4 +1,4 @@
-@use "global" as *;
+@use "global/**/*";
 
 .top-about__inner {
     position: relative;
@@ -12,7 +12,7 @@
         height: rem(181);
         bottom: rem(-158);
         right: calc(50% - min(48vw, 39.8125rem));
-        background-image: url(./assets/images/top/_サンゴとイソギンチャク.svg);
+        background-image: url(../images/top/_サンゴとイソギンチャク.svg);
         background-repeat: no-repeat;
         background-position: center;
         background-size: contain;
