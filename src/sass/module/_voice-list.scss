@@ -1,6 +1,8 @@
 @use "global" as *;
 
 .voice-list {
+    margin-left: auto;
+    margin-right: auto;
     display: grid;
     column-gap: rem(40);
     row-gap: rem(40);

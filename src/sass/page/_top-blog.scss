@@ -3,10 +3,11 @@
 .top-blog {
     @include mq("md") {
         padding-top: rem(97);
-        background-image: url(../../assets/images/top/top-blog.jpg);
+        background-image: url(../images/top/top-blog.jpg);
         background-repeat: no-repeat;
         background-position: top;
-        background-size: contain;
+        background-size: 100% rem(500);
+        // height: rem(500);
     }
 }
 
@@ -22,7 +23,7 @@
         left: calc(53% - min(50vw, rem(650)));
         width: rem(437);
         height: rem(201);
-        background-image: url(../../assets/images/top/キンギョハナダイ-top-blog.svg);
+        background-image: url(../images/top/キンギョハナダイ-top-blog.svg);
         background-repeat: no-repeat;
         background-position: center;
         background-size: contain;
@@ -35,11 +36,8 @@
 
 .top-blog__list {
     margin-top: rem(30);
-    max-width: rem(333);
-    margin: 0 auto;
 
     @include mq("md") {
-        max-width: initial;
         margin-top: rem(86);
     }
 }
