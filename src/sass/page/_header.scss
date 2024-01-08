@@ -4,10 +4,15 @@
     height: rem(80);
     background-color: rgba(40, 47, 53, 0.68);
     transition: background-color .3s;
+
     @include mq("md") {
         height: rem(90);
     }
 }
+
+.header.is-open {
+    background-color: $color-green;
+  }
 
 .header.transform {
     background-color: $color-gray;
@@ -19,6 +24,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    // background-color: $color-green;
 
     @include mq("md") {
         padding-left: rem(40);
@@ -104,7 +110,7 @@
     padding-top: rem(4);
     font-size: rem(10);
     font-weight: $regular;
-    font-family: 'Noto Sans JP',sans-serif;
+    font-family: 'Noto Sans JP', sans-serif;
     white-space: nowrap;
     line-height: 1.5;
 }
@@ -160,13 +166,12 @@
 
 .header__drawer {
     display: none;
-    padding-top: rem(82);
     padding-bottom: rem(100);
     padding-left: rem(15);
     padding-right: rem(15);
     position: absolute;
     z-index: 900;
-    top: 0;
+    top: rem(80);
     right: 0;
     bottom: 0;
     left: 0;
@@ -174,11 +179,8 @@
     height: 100vh;
     background-color: $color-green;
     overflow-y: scroll;
+    -ms-overflow-style: none;
     scrollbar-width: none;
-}
-
-.header__drawer::-webkit-scrollbar {
-    display: none;
 }
 
 .header__drawer::-webkit-scrollbar {

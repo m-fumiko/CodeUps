@@ -48,12 +48,12 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
 
     function openDrawer() {
         $(".js-drawer").fadeIn();
-        $(".js-hamburger").addClass("is-open");
+        $(".js-header,.js-hamburger").addClass("is-open");
     }
 
     function closeDrawer() {
         $(".js-drawer").fadeOut();
-        $(".js-hamburger").removeClass("is-open");
+        $(".js-header,.js-hamburger").removeClass("is-open");
     }
 
     // MVスライダー
