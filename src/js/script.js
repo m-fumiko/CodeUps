@@ -56,6 +56,21 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
         $(".js-header,.js-hamburger").removeClass("is-open");
     }
 
+    function openDrawer() {
+        $(".js-drawer").fadeIn();
+        $(".js-hamburger").addClass("is-open");
+        // ドロワーメニューが開いた時にスクロールを禁止
+        $("body").css("overflow", "hidden");
+    }
+    
+    function closeDrawer() {
+        $(".js-drawer").fadeOut();
+        $(".js-hamburger").removeClass("is-open");
+        // ドロワーメニューが閉じた時にスクロールを許可
+        $("body").css("overflow", "auto");
+    }
+
+
     // MVスライダー
     const mv_swiper = new Swiper(".js-mv-swiper", {
         loop: true,

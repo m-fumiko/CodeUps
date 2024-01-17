@@ -8,8 +8,8 @@
     @include mq("md") {
         content: '';
         position: absolute;
-        top: rem(-123);
-        left: calc(53% - min(50vw, rem(650)));
+        top: rem(-116);
+        left: calc(50% - min(48vw, rem(620)));
         width: rem(301);
         height: rem(138);
         // background-image: url(../images/common/キンギョハナダイ-contact.svg);
@@ -26,7 +26,7 @@
         content: '';
         position: absolute;
         bottom: rem(-71);
-        right: calc(50% - min(48vw, rem(650)));
+        right: calc(50% - min(48vw, rem(540)));
         width: rem(71);
         height: rem(162);
         background-image: url(../images/top/seahorse-top-voice.svg);

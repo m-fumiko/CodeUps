@@ -21,9 +21,9 @@
         position: absolute;
         width: rem(437);
         height: rem(201);
-        bottom: rem(-42);
-        left: calc(53% - min(50vw, rem(650)));
-        background-image: url(../images/top/fish-top-blog.svg);
+        bottom: rem(-62);
+        left: calc(50% - min(48vw, rem(620)));
+        background-image: url(../images/top/fish-top-price.svg);
         background-repeat: no-repeat;
         background-position: center;
         background-size: contain;
@@ -35,17 +35,20 @@
 }
 
 .top-price__flex {
+    margin-top: rem(30);
+
     @include mq("md") {
+    margin-top: rem(40);
     flex-direction: row-reverse;
     display: flex;
     }
 }
 
 .top-price__img-wrap {
-    margin-top: rem(30);
+    // margin-top: rem(30);
 
     @include mq("md") {
-        margin-top: rem(46);
+        // margin-top: rem(46);
         margin-left: rem(95);
         max-width: 69.0740741%;
         width: 100%;
@@ -71,8 +74,9 @@
 
 .top-price__list {
     margin-top: rem(40);
+
     @include mq("md") {
-        margin-top: rem(45);
+        margin-top: 0;
         max-width: 45.5555556%;
         width: 100%;
     }

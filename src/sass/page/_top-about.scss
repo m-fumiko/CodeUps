@@ -10,7 +10,7 @@
         position: absolute;
         width: rem(194);
         height: rem(181);
-        bottom: rem(-82);
+        bottom: rem(-93);
         right: calc(50% - min(48vw, 39.8125rem));
         background-image: url(../images/top/coral-top-about.svg);
         background-repeat: no-repeat;
@@ -24,7 +24,7 @@
 }
 
 .top-about__contents {
-    margin-top: rem(34);
+    margin-top: rem(36);
     display: flex;
     flex-direction: column;
 
@@ -71,16 +71,12 @@
     max-width: 81.1594203%;
     width: 100%;
     position: relative;
-    // top: rem(26);
-    // left: 9%;
     z-index: 0;
     aspect-ratio: 281/186;
 
     @include mq("md") {
         margin-top: rem(80);
         max-width: 81.4814815%;
-        // top: rem(80);
-        // left: 9%;
     }
 }
 
@@ -93,7 +89,9 @@
 }
 
 .top-about__content {
+    margin-top: rem(35);
     @include mq("md") {
+        margin-top: rem(68);
         display: flex;
         position: absolute;
         top: 32%;
@@ -104,16 +102,10 @@
     }
 }
 
-.top-about__sub-title {
-    @include mq("md") {
-        max-width: 50%;
-        width: 100%;
-    }
-}
-
 .top-about__content-right {
+    margin-top: rem(16);
+    
     @include mq("md") {
-        margin-top: rem(32);
         padding-left: rem(10);
         max-width: 49%;
         width: 100%;
@@ -121,14 +113,12 @@
 }
 
 .top-about__sub-title {
-    margin-top: rem(63);
     font-size: rem(40);
     font-weight: $regular;
     line-height: 1;
     color: $color-green;
 
     @include mq("md") {
-        margin-top: rem(53);
         max-width: 50%;
         width: 100%;
         font-size: rem(80);
@@ -138,7 +128,6 @@
 }
 
 .top-about__text {
-    margin-top: rem(17);
     font-size: rem(16);
     font-weight: $regular;
     font-family: 'Noto Sans JP', sans-serif;

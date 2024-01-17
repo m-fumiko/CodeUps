@@ -15,7 +15,11 @@
   }
 
 .header.transform {
-    background-color: $color-gray;
+    // background-color: $color-gray;
+
+    @include mq("md") {
+        background-color: $color-gray;
+    }
 }
 
 .header__inner {

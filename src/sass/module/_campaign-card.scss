@@ -59,7 +59,7 @@
     font-size: rem(16);
     font-weight: $medium;
     font-family: 'Noto Sans JP', sans-serif;
-    line-height: calc(24/16);
+    line-height: 1;
     border-bottom: solid rem(1) $color-green;
 
     @include mq("md") {
