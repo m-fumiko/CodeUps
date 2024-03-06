@@ -10,16 +10,14 @@
     }
 }
 
-.header.is-open {
-    background-color: $color-green;
-  }
-
 .header.transform {
-    // background-color: $color-gray;
-
     @include mq("md") {
         background-color: $color-gray;
     }
+}
+
+.header.is-open {
+    background-color: $color-green;
 }
 
 .header__inner {
@@ -69,7 +67,7 @@
     opacity: 1;
 }
 
-.header__nav-list {
+.header__nav-items {
     display: flex;
     height: inherit;
 }

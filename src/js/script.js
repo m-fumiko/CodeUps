@@ -23,6 +23,16 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
         }
     });
 
+    // function openDrawer() {
+    //     $(".js-drawer").fadeIn();
+    //     $(".js-header,.js-hamburger").addClass("is-open");
+    // }
+
+    // function closeDrawer() {
+    //     $(".js-drawer").fadeOut();
+    //     $(".js-header,.js-hamburger").removeClass("is-open");
+    // }
+
 
     // ハンバーガーメニュー
     $(".js-hamburger").on("click", function () {
@@ -55,21 +65,6 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
         $(".js-drawer").fadeOut();
         $(".js-header,.js-hamburger").removeClass("is-open");
     }
-
-    function openDrawer() {
-        $(".js-drawer").fadeIn();
-        $(".js-hamburger").addClass("is-open");
-        // ドロワーメニューが開いた時にスクロールを禁止
-        $("body").css("overflow", "hidden");
-    }
-    
-    function closeDrawer() {
-        $(".js-drawer").fadeOut();
-        $(".js-hamburger").removeClass("is-open");
-        // ドロワーメニューが閉じた時にスクロールを許可
-        $("body").css("overflow", "auto");
-    }
-
 
     // MVスライダー
     const mv_swiper = new Swiper(".js-mv-swiper", {
@@ -149,7 +144,7 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
         $(window).on("scroll", function () {
             let scrollPositionFromTop = $(window).scrollTop();
             let windowHeight = $(window).height();
-            let footerTop = $(".js-footer").offset().top;
+            let footerTop = $(".footer").offset().top;
             let triggerOffset = 200;
 
             // ボタンの表示・非表示

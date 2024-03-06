@@ -72,6 +72,7 @@
 }
 
 .top-campaign__swiper {
+    position: relative;
     margin-top: rem(31);
     margin-right: calc(50% - 50vw);
     width: 100vw;
@@ -84,12 +85,9 @@
 .top-campaign__swiper .swiper-slide {
     padding: rem(3) 0;
     height: auto;
-    // max-width: rem(280);
-    // width: 100%;
     margin-right: rem(20);
+    
     @include mq("md") {
-        // max-width: rem(333);
-        // width: 100%;
         margin-right: rem(40);
     }
 }

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1.0" />
@@ -17,7 +18,7 @@
   <meta property="og:site_name" content="" />
   <meta property="og:description" content="" />
   <!-- ファビコン -->
-  <link rel="”icon”" href="" />
+  <link rel="icon" href="" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -28,6 +29,9 @@
   <!-- css -->
   <link rel="stylesheet" href="./assets/css/style.css" />
   <!-- JavaScript -->
+  <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script defer src="./assets/js/jquery.inview.min.js"></script>
   <script defer src="./assets/js/script.js"></script>
 </head>
 
@@ -40,15 +44,15 @@
         </a>
       </h1>
       <nav class="header__nav u-desktop">
-        <ul class="header__nav-list">
-          <li class="header__nav-item"><a href="#top-campaign">Campaign<span>キャンペーン</span></a></li>
-          <li class="header__nav-item"><a href="#top-about">About us<span>私たちについて</span></a></li>
-          <li class="header__nav-item"><a href="#top-information">Information<span>ダイビング情報</span></a></li>
-          <li class="header__nav-item"><a href="#top-blog">Blog<span>ブログ</span></a></li>
-          <li class="header__nav-item"><a href="#top-voice">Voice<span>お客様の声</span></a></li>
-          <li class="header__nav-item"><a href="#top-price">Price<span>料金一覧</span></a></li>
-          <li class="header__nav-item"><a href="">FAQ<span>よくある質問</span></a></li>
-          <li class="header__nav-item"><a href="#top-contact">Contact<span>お問合せ</span></a></li>
+        <ul class="header__nav-items">
+          <li class="header__nav-item"><a href="#">Campaign<span>キャンペーン</span></a></li>
+          <li class="header__nav-item"><a href="#">About us<span>私たちについて</span></a></li>
+          <li class="header__nav-item"><a href="#">Information<span>ダイビング情報</span></a></li>
+          <li class="header__nav-item"><a href="#">Blog<span>ブログ</span></a></li>
+          <li class="header__nav-item"><a href="#">Voice<span>お客様の声</span></a></li>
+          <li class="header__nav-item"><a href="#">Price<span>料金一覧</span></a></li>
+          <li class="header__nav-item"><a href="#">FAQ<span>よくある質問</span></a></li>
+          <li class="header__nav-item"><a href="#">Contact<span>お問合せ</span></a></li>
         </ul>
       </nav>
       <!-- ハンバーガー -->
@@ -63,7 +67,7 @@
           <div class="drawer-menu__left">
             <div class="drawer-menu__wrap-top">
               <ul class="drawer-menu__list">
-                <li class="drawer-menu__item-title">
+                <li class="drawer-menu__item drawer-menu__item--title">
                   <a href="#top-campaign">キャンペーン</a>
                 </li>
                 <li class="drawer-menu__item">
@@ -79,10 +83,10 @@
             </div>
             <div class="drawer-menu__wrap">
               <ul class="drawer-menu__list">
-                <li class="drawer-menu__item-title">
+                <li class="drawer-menu__item drawer-menu__item--title">
                   <a href="#top-about">私たちについて</a>
                 </li>
-                <li class="drawer-menu__item-title">
+                <li class="drawer-menu__item drawer-menu__item--title">
                   <a href="#top-information">ダイビング情報</a>
                 </li>
                 <li class="drawer-menu__item">
@@ -94,7 +98,7 @@
                 <li class="drawer-menu__item">
                   <a href="#">ファンダイビング</a>
                 </li>
-                <li class="drawer-menu__item-title">
+                <li class="drawer-menu__item drawer-menu__item--title">
                   <a href="#top-blog">ブログ</a>
                 </li>
               </ul>
@@ -103,10 +107,10 @@
           <div class="drawer-menu__right">
             <div class="drawer-menu__wrap-top">
               <ul class="drawer-menu__list">
-                <li class="drawer-menu__item-title">
+                <li class="drawer-menu__item drawer-menu__item--title">
                   <a href="#top-voice">お客様の声</a>
                 </li>
-                <li class="drawer-menu__item-title">
+                <li class="drawer-menu__item drawer-menu__item--title">
                   <a href="#top-price">料金一覧</a>
                 </li>
                 <li class="drawer-menu__item">
@@ -122,16 +126,16 @@
             </div>
             <div class="drawer-menu__wrap">
               <ul class="drawer-menu__list">
-                <li class="drawer-menu__item-title">
+                <li class="drawer-menu__item drawer-menu__item--title">
                   <a href="#">よくある質問</a>
                 </li>
-                <li class="drawer-menu__item-title">
+                <li class="drawer-menu__item drawer-menu__item--title">
                   <a href="#">プライバシー<br>ポリシー</a>
                 </li>
-                <li class="drawer-menu__item-title">
+                <li class="drawer-menu__item drawer-menu__item--title">
                   <a href="#">利用規約</a>
                 </li>
-                <li class="drawer-menu__item-title">
+                <li class="drawer-menu__item drawer-menu__item--title">
                   <a href="#top-contact">お問い合わせ</a>
                 </li>
               </ul>
@@ -141,7 +145,6 @@
       </div>
     </div>
   </header>
-
   <main>
     <!-- MV -->
     <section class="top-mv js-mv">
@@ -180,26 +183,22 @@
         </div>
       </div>
     </section>
-
+    <div class="tab"></div>
     <!-- キャンーペーン -->
     <section id="top-campaign" class="top-campaign top-campaign-layout">
       <div class="top-campaign__inner inner">
         <div class="top-campaign__container">
           <div class="top-campaign__title common-title">
-            <h3 class="common-title__main">campaign</h3>
+            <h2 class="common-title__main">campaign</h2>
             <p class="common-title__sub">キャンペーン</p>
           </div>
           <!-- 前後の矢印 -->
           <div class="top-campaign__swiper-button u-desktop">
-            <a href="">
-              <div class="top-campaign__swiper-button-prev swiper-button-prev js-siwper-button"></div>
-            </a>
-            <a href="">
-              <div class="top-campaign__swiper-button-next swiper-button-next js-siwper-button"></div>
-            </a>
+            <div class="top-campaign__swiper-button-prev swiper-button-prev js-siwper-button"></div>
+            <div class="top-campaign__swiper-button-next swiper-button-next js-siwper-button"></div>
           </div>
         </div>
-        <div class="top-campaign__swiper top-campaign-swiper ">
+        <div class="top-campaign__swiper ">
           <div class="swiper js-top-campaign-swiper">
             <ul class="swiper-wrapper">
               <li class="swiper-slide">
@@ -275,12 +274,11 @@
         </div>
       </div>
     </section>
-
     <!-- アバウト -->
     <section id="top-about" class="top-about top-about-layout">
       <div class="top-about__inner inner">
         <div class="top-about__title common-title">
-          <h3 class="common-title__main">about us</h3>
+          <h2 class="common-title__main">about us</h2>
           <p class="common-title__sub">私たちについて</p>
         </div>
         <div class="top-about__contents">
@@ -293,9 +291,9 @@
             </div>
           </div>
           <div class="top-about__content">
-            <h4 class="top-about__sub-title">
+            <h3 class="top-about__sub-title">
               Dive into<br>the Ocean
-            </h4>
+            </h3>
             <div class="top-about__content-right">
               <p class="top-about__text">
                 ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br>ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
@@ -310,12 +308,11 @@
         </div>
       </div>
     </section>
-
     <!-- インフォメーション -->
     <section id="top-information" class="top-information top-information-layout">
       <div class="top-information__inner inner">
         <div class="top-information__title common-title">
-          <h3 class="common-title__main">information</h3>
+          <h2 class="common-title__main">information</h2>
           <p class="common-title__sub">ダイビング情報</p>
         </div>
         <div class="top-information__flex">
@@ -334,20 +331,15 @@
         </div>
       </div>
     </section>
-
     <!-- ブログ -->
     <section id="top-blog" class="top-blog top-blog-layout">
       <div class="top-blog__inner inner">
         <div class="top-blog__title common-title">
-          <h3 class="common-title__main common-title u-mobile">blog</h3>
-          <p class="common-title__sub common-title u-mobile">ブログ</p>
+          <h2 class="common-title__main common-title__main--white">blog</h2>
+          <p class="common-title__sub common-title__sub--white">ブログ</p>
         </div>
-        <div class="top-blog__title common-title">
-          <h3 class="common-title__main common-title__main--white u-desktop">blog</h3>
-          <p class="common-title__sub common-title__sub--white u-desktop">ブログ</p>
-        </div>
-        <ul class="top-blog__list blog-list blog-list-layout">
-          <li class="top-blog-list__item blog-card">
+        <ul class="top-blog__list blog-list">
+          <li class="blog-list__item blog-card">
             <a href="#">
               <div class="blog-card__img">
                 <img src="./assets/images/common/blog1.jpg" alt="ピンク色の綺麗な珊瑚礁の画像">
@@ -360,7 +352,7 @@
               </div>
             </a>
           </li>
-          <li class="top-blog-list__item blog-card">
+          <li class="blog-list__item blog-card">
             <a href="#">
               <div class="blog-card__img">
                 <img src="./assets/images/common/blog2.jpg" alt="ウミガメがこちらに向かって泳いで来る画像">
@@ -373,7 +365,7 @@
               </div>
             </a>
           </li>
-          <li class="top-blog-list__item blog-card">
+          <li class="blog-list__item blog-card">
             <a href="#">
               <div class="blog-card__img">
                 <img src="./assets/images/common/blog3.jpg" alt="カクレクマノミの画像">
@@ -398,7 +390,7 @@
     <section id="top-voice" class="top-voice top-voice-layout">
       <div class="top-voice__inner inner">
         <div class="top-voice__title common-title">
-          <h3 class="common-title__main">voice</h3>
+          <h2 class="common-title__main">voice</h2>
           <p class="common-title__sub">お客様の声</p>
         </div>
         <ul class="top-voice__list voice-list">
@@ -447,147 +439,175 @@
         </div>
       </div>
     </section>
-
     <!-- プライス -->
     <section id="top-price" class="top-price top-price-layout">
       <div class="top-price__inner inner">
         <div class="top-price__title common-title">
-          <h3 class="common-title__main">price</h3>
+          <h2 class="common-title__main">price</h2>
           <p class="common-title__sub">料金一覧</p>
         </div>
         <div class="top-price__flex">
           <div class="top-price__img-wrap">
-            <div class="top-price__img-sp u-mobile color-box js-color-box">
-              <img src="./assets/images/top/top-price-sp.jpg" alt="泳ぐウミガメを横から撮影した画像">
-            </div>
-            <div class="top-price__img-pc u-desktop color-box js-color-box">
+            <picture class="top-price__img color-box js-color-box">
+              <source srcset="./assets/images/top/top-price-sp.jpg" media="(max-width: 767px)">
               <img src="./assets/images/top/top-price.jpg" alt="無数のオレンジ色の熱帯魚が巨大なサンゴの周囲で泳いでいる様子">
-            </div>
+            </picture>
           </div>
-          <ul class="top-price__list">
+          <ul class="top-price__items">
             <li class="top-price__item">
-              <div class="top-price__item-title">ライセンス講習</div>
-              <div class="top-price__item-content">
-                <p class="top-price__item-text">オープンウォーターダイバーコース</p>
-                <p class="top-price__item-price">¥50,000</p>
-              </div>
-              <div class="top-price__item-content">
-                <p class="top-price__item-text">アドバンスドオープンウォーターコース</p>
-                <p class="top-price__item-price">¥60,000</p>
-              </div>
-              <div class="top-price__item-content">
-                <p class="top-price__item-text">レスキュー＋EFRコース</p>
-                <p class="top-price__item-price">¥70,000</p>
-              </div>
+              <h3 class="top-price__item-title">ライセンス講習</h3>
+              <dl>
+                <div class="top-price__item-content">
+                  <dt class="top-price__item-text">オープンウォーターダイバーコース</dt>
+                  <dd class="top-price__item-price">¥50,000</dd>
+                </div>
+              </dl>
+              <dl>
+                <div class="top-price__item-content">
+                  <dt class="top-price__item-text">アドバンスドオープンウォーターコース</dt>
+                  <dd class="top-price__item-price">¥60,000</dd>
+                </div>
+              </dl>
+              <dl>
+                <div class="top-price__item-content">
+                  <dt class="top-price__item-text">レスキュー＋EFRコース</dt>
+                  <dd class="top-price__item-price">¥70,000</dd>
+                </div>
+              </dl>
             </li>
             <li class="top-price__item">
-              <div class="top-price__item-title">体験ダイビング</div>
-              <div class="top-price__item-content">
-                <p class="top-price__item-text">ビーチ体験ダイビング(半日)</p>
-                <p class="top-price__item-price">¥7,000</p>
-              </div>
-              <div class="top-price__item-content">
-                <p class="top-price__item-text">ビーチ体験ダイビング(1日)</p>
-                <p class="top-price__item-price">¥14,000</p>
-              </div>
-              <div class="top-price__item-content">
-                <p class="top-price__item-text">ボート体験ダイビング(半日)</p>
-                <p class="top-price__item-price">¥10,000</p>
-              </div>
-              <div class="top-price__item-content">
-                <p class="top-price__item-text">ボート体験ダイビング(1日)</p>
-                <p class="top-price__item-price">¥18,000</p>
-              </div>
+              <h3 class="top-price__item-title">体験ダイビング</h3>
+              <dl>
+                <div class="top-price__item-content">
+                  <dt class="top-price__item-text">ビーチ体験ダイビング(半日)</dt>
+                  <dd class="top-price__item-price">¥7,000</dd>
+                </div>
+              </dl>
+              <dl>
+                <div class="top-price__item-content">
+                  <dt class="top-price__item-text">ビーチ体験ダイビング(1日)</dt>
+                  <dd class="top-price__item-price">¥14,000</dd>
+                </div>
+              </dl>
+              <dl>
+                <div class="top-price__item-content">
+                  <dt class="top-price__item-text">ボート体験ダイビング(半日)</dt>
+                  <dd class="top-price__item-price">¥10,000</dd>
+                </div>
+              </dl>
+              <dl>
+                <div class="top-price__item-content">
+                  <dt class="top-price__item-text">ボート体験ダイビング(1日)</dt>
+                  <dd class="top-price__item-price">¥18,000</dd>
+                </div>
+              </dl>
             </li>
             <li class="top-price__item">
-              <div class="top-price__item-title">ファンダイビング</div>
-              <div class="top-price__item-content">
-                <p class="top-price__item-text">ビーチダイビング(2ダイブ)</p>
-                <p class="top-price__item-price">¥14,000</p>
-              </div>
-              <div class="top-price__item-content">
-                <p class="top-price__item-text">ボートダイビング(2ダイブ)</p>
-                <p class="top-price__item-price">¥18,000</p>
-              </div>
-              <div class="top-price__item-content">
-                <p class="top-price__item-text">スペシャルダイビング(2ダイブ)</p>
-                <p class="top-price__item-price">¥24,000</p>
-              </div>
-              <div class="top-price__item-content">
-                <p class="top-price__item-text">ナイトダイビング(1ダイブ)</p>
-                <p class="top-price__item-price">¥10,000</p>
-              </div>
+              <h3 class="top-price__item-title">ファンダイビング</h3>
+              <dl>
+                <div class="top-price__item-content">
+                  <dt class="top-price__item-text">ビーチダイビング(2ダイブ)</dt>
+                  <dd class="top-price__item-price">¥14,000</dd>
+                </div>
+              </dl>
+              <dl>
+                <div class="top-price__item-content">
+                  <dt class="top-price__item-text">ボートダイビング(2ダイブ)</dt>
+                  <dd class="top-price__item-price">¥18,000</dd>
+                </div>
+              </dl>
+              <dl>
+                <div class="top-price__item-content">
+                  <dt class="top-price__item-text">スペシャルダイビング(2ダイブ)</dt>
+                  <dd class="top-price__item-price">¥24,000</dd>
+                </div>
+              </dl>
+              <dl>
+                <div class="top-price__item-content">
+                  <dt class="top-price__item-text">ナイトダイビング(1ダイブ)</dt>
+                  <dd class="top-price__item-price">¥10,000</dd>
+                </div>
+              </dl>
             </li>
             <li class="top-price__item">
-              <div class="top-price__item-title">スペシャルダイビング</div>
-              <div class="top-price__item-content">
-                <p class="top-price__item-text">貸切ダイビング(2ダイブ)</p>
-                <p class="top-price__item-price">¥24,000</p>
-              </div>
-              <div class="top-price__item-content">
-                <p class="top-price__item-text">1日ダイビング(3ダイブ)</p>
-                <p class="top-price__item-price">¥32,000</p>
-              </div>
+              <h3 class="top-price__item-title">スペシャルダイビング</h3>
+              <dl>
+                <div class="top-price__item-content">
+                  <dt class="top-price__item-text">貸切ダイビング(2ダイブ)</dt>
+                  <dd class="top-price__item-price">¥24,000</dd>
+                </div>
+              </dl>
+              <dl>
+                <div class="top-price__item-content">
+                  <dt class="top-price__item-text">1日ダイビング(3ダイブ)</dt>
+                  <dd class="top-price__item-price">¥32,000</dd>
+                </div>
+              </dl>
             </li>
           </ul>
         </div>
-        <div class="top-price__button-wrapper">
-          <a href="#" class="common-button">View more<span></span>
-          </a>
-        </div>
+      </div>
+      <div class="top-price__button-wrapper">
+        <a href="#" class="common-button">View more<span></span>
+        </a>
+      </div>
       </div>
     </section>
-
-        <!-- コンタクト -->
-        <section id="top-contact" class="top-contact  common-contact common-contact-layout">
-          <div class="common-contact__inner inner">
-            <div class="common-contact__flex">
-              <div class="common-contact__access">
-                <div class="common-contact__access-logo">
-                  <a href="">
-                    <img src="./assets/images/common/CodeUps.svg" alt="CodeUpsロゴ">
-                  </a>
-                </div>
-                <div class="common-contact__access-info">
-                  <p class="common-contact__access-text">
-                    沖縄県那覇市1-1<br>
-                    TEL:0120-000-0000<br>
-                    営業時間:8:30-19:00<br>
-                    定休日:毎週火曜日
-                  </p>
-                  <div class="common-contact__access-map">
-                    <iframe
-                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3579.36291128021!2d127.67381048705204!3d26.21739516794133!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34e5699d28718f37%3A0x2fa598ddae601d3b!2z44CSOTAwLTAwMzIg5rKW57iE55yM6YKj6KaH5biC5p2-5bGx77yR5LiB55uu77yR77yR!5e0!3m2!1sja!2sjp!4v1702611019185!5m2!1sja!2sjp"
-                      width="" height="" style="border:0;" allowfullscreen="" loading="lazy"
-                      referrerpolicy="no-referrer-when-downgrade"></iframe>
-                  </div>
-                </div>
+    <!-- コンタクト -->
+    <section class="common-contact common-contact-layout">
+      <div class="common-contact__inner inner">
+        <div class="common-contact__flex">
+          <div class="common-contact__access">
+            <div class="common-contact__access-logo">
+              <a href="">
+                <img src="./assets/images/common/CodeUps.svg" alt="CodeUpsロゴ">
+              </a>
+            </div>
+            <div class="common-contact__access-info">
+              <div class="common-contact__access-text-wrap">
+                <p class="common-contact__access-text">沖縄県那覇市1-1</p>
+              <p class="common-contact__access-text"><a href="tel:0120-000-000">TEL:0120-000-0000</a></p>
+              <p class="common-contact__access-text">営業時間:8:30-19:00</p>
+              <p class="common-contact__access-text">定休日:毎週火曜日</p>
               </div>
-              <div class="common-contact__content">
-                <div class="common-contact__title common-title">
-                  <h3 class="common-title__main common-title__main--large">contact</h3>
-                  <p class="common-title__sub common-title__sub--large">お問い合わせ</p>
-                </div>
-                <p class="common-contact__text">ご予約・お問い合わせはコチラ</p>
-                <div class="common-contact__button-wrapper">
-                  <a href="#" class="common-button common-button--contact">Contact us<span></span>
-                  </a>
-                </div>
+              
+              <!-- <p class="common-contact__access-text">
+                沖縄県那覇市1-1<br>
+                TEL:0120-000-0000<br>
+                営業時間:8:30-19:00<br>
+                定休日:毎週火曜日
+              </p> -->
+              <div class="common-contact__access-map">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3579.36291128021!2d127.67381048705204!3d26.21739516794133!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34e5699d28718f37%3A0x2fa598ddae601d3b!2z44CSOTAwLTAwMzIg5rKW57iE55yM6YKj6KaH5biC5p2-5bGx77yR5LiB55uu77yR77yR!5e0!3m2!1sja!2sjp!4v1702611019185!5m2!1sja!2sjp"
+                  width="" height="" style="border:0;" allowfullscreen="" loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"></iframe>
               </div>
             </div>
           </div>
-        </section>
+          <div class="common-contact__content">
+            <div class="common-contact__title common-title">
+              <h2 class="common-title__main common-title__main--large">contact</h2>
+              <p class="common-title__sub common-title__sub--large">お問い合わせ</p>
+            </div>
+            <p class="common-contact__text">ご予約・お問い合わせはコチラ</p>
+            <div class="common-contact__button-wrapper">
+              <a href="#" class="common-button">Contact us<span></span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
-
   <!-- トップに戻るボタン -->
   <div class="top-button top-button-layout js-top-button">
     <a href="">
       <img src="./assets/images/common/top.svg" alt="PAGE TOP">
     </a>
   </div>
-
   <!-- フッター -->
-  <footer class="footer footer-layout js-footer">
+  <footer class="footer footer-layout">
     <div class="footer__inner inner">
       <div class="footer__wrap">
         <div class="footer__top">
@@ -693,10 +713,8 @@
         class="footer__copyright">Copyright&nbsp;&copy;&nbsp;2021&nbsp;-&nbsp;2023&nbsp;CodeUps&nbsp;LLC.&nbsp;All&nbsp;Rights&nbsp;Reserved.</small>
     </div>
   </footer>
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-  <script src="./assets/js/jquery.inview.min.js"></script>
+  <script src="./assets/js/jquery.inview.min.js"></script> -->
 </body>
-
 </html>
