@@ -2,10 +2,9 @@
 
 .top-about-layout {
     margin-top: rem(84);
-    // margin-bottom: rem(73);
 
     @include mq("md") {
         margin-top: rem(136);
-        // margin-bottom: rem(230);
+        margin-bottom: rem(183);
     }
 }
