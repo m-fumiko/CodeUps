@@ -23,17 +23,6 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
         }
     });
 
-    // function openDrawer() {
-    //     $(".js-drawer").fadeIn();
-    //     $(".js-header,.js-hamburger").addClass("is-open");
-    // }
-
-    // function closeDrawer() {
-    //     $(".js-drawer").fadeOut();
-    //     $(".js-header,.js-hamburger").removeClass("is-open");
-    // }
-
-
     // ハンバーガーメニュー
     $(".js-hamburger").on("click", function () {
         $(this).toggleClass("is-open");
@@ -160,4 +149,24 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
             return false;
         });
     });
+
+    // モーダル
+    $(function () {
+        const open = $(".js-modal-open"),
+              close = $(".js-modal-close");
+    
+        // 各画像のクリックイベントを個別に処理
+        open.on("click", function () {
+            // クリックされた画像のdata-target属性値を取得
+            const target = $(this).data("target");
+            // 対応するモーダルを開く
+            $(`#gallery-modal-${target}`).addClass("is-open");
+        });
+
+        // 閉じるボタンをクリックしたらモーダルを閉じる
+        close.on("click", function () {
+            $(this).closest(".gallery-modal__item").removeClass("is-open");
+        });
+    });
+
 });

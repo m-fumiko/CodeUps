@@ -33,14 +33,14 @@
         padding-top: rem(80);
         padding-bottom: rem(80);
         flex-direction: initial;
-        // gap: rem(80);
-        // max-width: rem(1080);
-        // width: 100%;
         box-shadow: rem(1) rem(2) rem(4) rem(1) rgba(0, 0, 0, .25);
     }
 }
 
 .common-contact__access {
+    margin: 0 auto;
+    width: 85.5072464%;
+
     @include mq("md") {
         // padding-left: 52px;
         margin: auto;
@@ -94,9 +94,9 @@
 }
 
 .common-contact__access-map iframe {
-    @include mq("md") {
-        width: 100%;
-    }
+    aspect-ratio: 295/160;
+    width: 100%;
+    height: 100%;
 }
 
 .common-contact__content {
