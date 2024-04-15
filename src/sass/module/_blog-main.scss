@@ -1,0 +1,65 @@
+@use "global" as *;
+
+.blog-main {
+    position: relative;
+    width: 96.8%;
+    margin-left: auto;
+    margin-right: auto;
+
+    @include mq("md") {
+        width: 65.3703703704%;
+    }
+}
+
+.blog-main::after {
+    content: "";
+    position: absolute;
+    top: rem(-23);
+    left: calc(50% - min(46vw, rem(620)));
+    width: rem(120);
+    height: rem(55);
+    background-image: url(../images/top/hanadai-top-voice.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    z-index: -1;
+
+    @include mq("md") {
+        top: rem(75);
+        left: calc(50% - min(49vw, rem(430)));
+        width: rem(300);
+        height: rem(138);
+    }
+}
+
+.blog-main__items {
+    display: grid;
+    column-gap: rem(40);
+    row-gap: rem(40);
+    grid-template-columns: repeat(1, 1fr);
+
+    @include mq(md){
+        row-gap: rem(80);
+        grid-template-columns: repeat(2, 5fr);
+    }
+}
+
+.blog-main__item a {
+    opacity: 1;
+}
+
+.blog-main__item .blog-card__img {
+    overflow: hidden;
+}
+
+.blog-main__item .blog-card__img img {
+    transition: transform .6s ease;
+}
+
+.blog-main__item .blog-card__img:hover img {
+    transform: scale(1.1);
+}
+
+.blog-main__pagenavi {
+    margin-top: rem(80);
+}

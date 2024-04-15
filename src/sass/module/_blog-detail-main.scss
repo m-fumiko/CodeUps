@@ -1,0 +1,126 @@
+@use "global" as *;
+
+.blog-detail-main {
+    position: relative;
+    // width: 96.8%;
+    // margin-left: auto;
+    // margin-right: auto;
+
+    @include mq("md") {
+        width: 65.0925926%;
+        // width: 65.3703703704%;
+    }
+}
+
+.blog-detail-main::after {
+    content: "";
+    position: absolute;
+    top: rem(-22);
+    left: calc(50% - min(46vw, rem(620)));
+    width: rem(120);
+    height: rem(55);
+    background-image: url(../images/top/hanadai-top-voice.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    z-index: -1;
+
+    @include mq("md") {
+        top: rem(-66);
+        left: calc(50% - min(49vw, rem(431)));
+        width: rem(300);
+        height: rem(138);
+    }
+}
+
+.blog-detail-main__date {
+    font-size: rem(14);
+    font-weight: $regular;
+    line-height: 1;
+}
+
+.blog-detail-main__title {
+    margin-top: rem(13);
+    padding-bottom: rem(6);
+    font-size: rem(24);
+    font-weight: $medium;
+    line-height: 1;
+    border-bottom: solid 1px $color-green;
+
+    @include mq("md") {
+        margin-top: rem(18);
+        padding-bottom: 0;
+        font-size: rem(32);
+    }
+}
+
+.blog-detail-main__img {
+    margin-top: rem(24);
+    width: 100%;
+
+    @include mq("md") {
+        margin-top: rem(40);
+    }
+}
+
+.blog-detail-main__img img {
+    aspect-ratio: 345/231;
+    width: 100%;
+    object-fit: cover;
+}
+
+.blog-detail-main__text {
+    margin-top: rem(24);
+
+    @include mq("md") {
+        margin-top: rem(40);
+    }
+}
+
+.blog-detail-main__text,
+.blog-detail-main__item {
+    font-size: rem(16);
+    font-weight: $regular;
+    line-height: calc(24/16);
+}
+
+.blog-detail-main__items {
+    margin-top: rem(24);
+    padding-left: rem(27);
+
+    @include mq("md") {
+        margin-top: rem(40);
+    }
+}
+
+.blog-detail-main__item {
+    position: relative;
+}
+
+.blog-detail-main__item::before {
+    position: absolute;
+    content: '';
+    mask-image: url(../images/common/starfish.svg);
+    background-color: $color-green;
+    mask-position: center;
+    mask-repeat: no-repeat;
+    mask-size: contain;
+    width: rem(18);
+    height: rem(18);
+    left: rem(-22);
+    top: rem(0);
+    z-index: 100;
+}
+
+.blog-detail-main__item + .blog-detail-main__item {
+    margin-top: rem(4);
+}
+
+.blog-detail__pagenavi {
+    margin-top: rem(40);
+
+    @include mq("md") {
+        margin-top: rem(80);
+    }
+}
+

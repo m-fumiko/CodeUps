@@ -3,6 +3,7 @@
 .campaign-card-contents {
     position: relative;
 }
+
 .campaign-card-contents::after {
     content: "";
     position: absolute;
@@ -23,24 +24,18 @@
     }
 }
 
-.campaign-card-contents__inner.inner {
-    padding: 0 rem(48);
-
-    @include mq("md") {
-        padding: 0 rem(25);
-    }
-}
-
 .campaign-card-contents__items {
-    margin-top: rem(32);
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     column-gap: rem(40);
     row-gap: rem(40);
+    width: 82.6666667%;
+    margin: auto;
 
     @include mq("md") {
         grid-template-columns: repeat(2, 1fr);
         row-gap: rem(88);
+        width: initial;
     }
 }
 
@@ -50,33 +45,8 @@
     }
 }
 
-.pc-contents__article {
+.campaign-card__pc-contents {
     margin-top: rem(24);
-    font-size: rem(16);
-    font-weight: $regular;
-    font-family: 'Noto Sans JP',sans-serif;
-    line-height: calc(24/16);
-}
-
-.pc-contents__date {
-    margin-top: rem(24);
-    text-align: center;
-    font-size: rem(16);
-    font-weight: $bold;
-    font-family: $second-font-family;
-    color: $color-green;
-}
-
-.pc-contents__contact {
-    margin-top: rem(7);
-    text-align: center;
-    font-size: rem(14);
-    color: $color-green;
-}
-
-.pc-contents__button-wrapper {
-    margin-top: rem(9);
-    text-align: center;
 }
 
 .campaign-card-contents__pagenavi {

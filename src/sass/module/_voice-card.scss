@@ -47,6 +47,9 @@
     line-height: 1;
     color: $color-green;
     border: solid rem(1) $color-green;
+    width: fit-content;
+    min-width: 116px;
+    text-align: center;
 
     @include mq("md") {
         padding: rem(10) rem(15);

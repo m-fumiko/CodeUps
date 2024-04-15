@@ -9,54 +9,53 @@
     }
 }
 
-.footer-menu__left,
-.footer-menu__right {
-    @include mq("md") {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
 .footer-menu__left {
-    padding-left: rem(22);
-
-    @include mq("md") {
-        padding-left: rem(33);
-    }
-}
-
-.footer-menu__left .footer-menu__wrap:nth-child(2) {
-    @include mq("md") {
-        margin-left: rem(27);
-    }
-}
-
-.footer-menu__right .footer-menu__wrap:nth-child(2) {
-    @include mq("md") {
-        margin-left: rem(13);
-    }
+    margin-left: rem(23);
 }
 
 .footer-menu__right {
     margin-left: rem(40);
 }
 
-.footer-menu__item-title a {
-    position: relative;
-    display: block;
-    padding-top: rem(20);
-    padding-bottom: rem(20);
-    color: $color-white;
-    font-size: rem(16);
-    font-weight: $bold;
-    font-family: 'Noto Sans JP',sans-serif;
-    line-height: 1;
+.footer-menu__left,
+.footer-menu__right {
+    @include mq("md") {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: rem(45);
+    }
 }
 
-.footer-menu__item-title a::before {
+.footer-menu__wrap {
+    margin-top: rem(16);
+
+    @include mq("md") {
+        margin-top: 0
+        ;
+    }
+}
+
+.footer-menu__items + .footer-menu__items {
+    margin-top: rem(16);
+}
+
+.footer-menu__item-title {
+    position: relative;
+    display: block;
+    padding-top: rem(12);
+    padding-bottom: rem(12);
+    font-size: rem(16);
+    font-weight: 300;
+    font-weight: $bold;
+    font-family: 'Noto Sans JP', sans-serif;
+    line-height: 1;
+    color: $color-white;
+}
+
+.footer-menu__item-title::before {
+    background: url(../images/common/starfish.svg);
     position: absolute;
     content: '';
-    background: url(../images/common/starfish.svg);
     width: rem(18);
     height: rem(18);
     left: rem(-22);
@@ -64,27 +63,12 @@
     z-index: 100;
 }
 
-.footer-menu__item a {
-    display: block;
+.footer-menu__sub-item {
     padding-top: rem(12);
     padding-bottom: rem(12);
     font-size: rem(16);
     font-weight: 300;
-    font-family: 'Noto Sans JP',sans-serif;
-    line-height: 1;
+    font-family: 'Noto Sans JP', sans-serif;
+    line-height: calc(18/16);
     color: $color-white;
-}
-
-.footer-menu__wrap-top {
-    @include mq("md") {
-        margin-top: rem(5);
-    }
-}
-
-.footer-menu__wrap {
-    margin-top: rem(9);
-
-    @include mq("md") {
-        margin-top: rem(5);
-    }
 }

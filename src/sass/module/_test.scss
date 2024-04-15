@@ -1,0 +1,21 @@
+@use "global" as *;
+
+// .blog-side-title {
+//     position: relative;
+//     font-size: 24px;
+// }
+
+// .blog-side-title::before {
+//     position: absolute;
+//     content: "";
+//     top: -7px;
+//     left: 0;
+//     display: inline-block;
+//     width: 8px;
+//     height: 50px;
+//     background-color: $color-green;
+// }
+
+.month {
+    display: none;
+}

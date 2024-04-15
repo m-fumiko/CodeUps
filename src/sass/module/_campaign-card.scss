@@ -54,7 +54,7 @@
 .campaign-card__title {
     margin-top: rem(11);
     padding-bottom: rem(8);
-    flex-grow: 1;
+    // flex-grow: 1;
     font-size: rem(16);
     font-weight: $medium;
     font-family: 'Noto Sans JP', sans-serif;
@@ -133,4 +133,8 @@
         margin-left: rem(38);
         font-size: rem(40);
     }
+}
+
+.campaign-card__pc-contents {
+    height: 100%;
 }

@@ -33,7 +33,7 @@
 
     @include mq("md") {
         margin-top: rem(40);
-        margin-left: rem(53);
+        margin-left: rem(42);
         display: flex;
         gap: rem(21);
     }
@@ -50,10 +50,10 @@
 }
 
 .footer__nav-menu {
-    margin-top: rem(22);
+    margin-top: rem(30);
 
     @include mq("md") {
-        margin-top: 0;
+        margin-top: rem(12);
     }
 }
 

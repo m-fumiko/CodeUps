@@ -2,11 +2,6 @@
 
 .gallery {
     position: relative;
-    margin-top: rem(43);
-
-    @include mq("md") {
-        margin-top: rem(85);
-    }
 }
 
 .gallery::after {
@@ -25,7 +20,6 @@
 }
 
 .gallery__items {
-    margin-top: rem(8);
     display: grid;
     gap: rem(8);
 
@@ -76,3 +70,4 @@
         aspect-ratio: 492/746;
     }
 }
+

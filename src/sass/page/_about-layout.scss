@@ -1,5 +1,9 @@
 @use "global" as *;
 
-.about-gallery-layout {
-    margin-top: rem(40);
+.about-layout {
+    margin-top: rem(48);
+
+    @include mq("md") {
+        margin-top: rem(147);
+    }
 }
