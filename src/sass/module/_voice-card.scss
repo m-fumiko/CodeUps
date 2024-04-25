@@ -4,6 +4,7 @@
     padding: rem(16) rem(16) rem(24);
     background: $color-white;
     box-shadow: rem(2) rem(2) rem(10) 0 rgba(0, 0, 0, .25);
+    height: 100%;
 
     @include mq("md") {
         padding: rem(24);
@@ -19,13 +20,13 @@
     width: calc(100% - (rem(151) + rem(13)));
 
     @include mq("md") {
+        margin-top: rem(24);
         width: calc(100% - (rem(180) + rem(16)));
     }
 }
 
 .voice-card__meta {
     @include mq("md") {
-    margin-top: rem(24);
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
@@ -48,7 +49,7 @@
     color: $color-green;
     border: solid rem(1) $color-green;
     width: fit-content;
-    min-width: 116px;
+    min-width: rem(108);
     text-align: center;
 
     @include mq("md") {
@@ -102,6 +103,6 @@
     line-height: calc(24/16);
 
     @include mq("md") {
-        margin-top: rem(45);
+        margin-top: rem(41);
     }
 }

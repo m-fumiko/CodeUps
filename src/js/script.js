@@ -236,4 +236,12 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     //     });
     //   });
 
+    // アコーディオン
+    jQuery(function ($) {
+        $('.js-faq-question').on('click', function () {
+            $(this).next().slideToggle();
+            $(this).toggleClass('is-open');
+        });
+    });
+
 });

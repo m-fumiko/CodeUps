@@ -1,0 +1,54 @@
+@use "global" as *;
+
+.form-check {
+    margin-left: auto;
+    margin-right: auto;
+    width: 84.73913%;
+}
+
+.form-check label {
+    display:block;
+}
+
+.form-check input + span {
+    margin-top: rem(36);
+    cursor: pointer;
+    display: inline-block;
+    padding: 0 0 0 rem(35);
+    position: relative;
+    font-size: rem(14);
+    line-height: 1.5;
+}
+
+.form-check input + span::before {
+    content: "";
+    position: absolute;
+    top: 16%;
+    left: 6px;
+    transform: translateY(-50%);
+    background: #fff;
+    border: 1px solid $color-green;
+    display: block;
+    width: rem(22);
+    height: rem(22);
+}
+
+.form-check input + span::after {
+    content: "";
+    margin-top: rem(-2);
+    position: absolute;
+    top: 16%;
+    left: 9px;
+    transform: translateY(-50%) rotate(-45deg);
+    display: block;
+    width: rem(15);
+    height: rem(8);
+    border-bottom: rem(3) solid #000;
+    border-left: rem(3) solid #000;
+    transition:  .3s;
+    opacity: 0;
+}
+
+.form-check input:checked + span::after {
+    opacity: 1;
+}

@@ -1,0 +1,89 @@
+@use "global" as *;
+
+.form__wrap {
+    @include mq(md){
+        display: flex;
+        align-items: center;
+    }
+}
+// ↓わからん
+.form__wrap.form__wrap--textarea {
+    @include mq(md){
+        align-items: flex-start;
+    }
+}
+
+.form__wrap + .form__wrap {
+    margin-top: rem(21);
+    border-top: 1px solid #000;
+}
+
+.form__label {
+    margin-top: 29px;
+    font-size: rem(16);
+    font-weight: $bold;
+    line-height: 1;
+    // letter-spacing: 0.08em;
+    @include mq(md){
+        max-width: rem(200);
+        width: 100%;
+    }
+}
+
+// .form__label:not(:first-child) {
+//     margin-top: 24px;
+// }
+// ↓わからん
+.form__wrap.form__wrap--textarea .form__label {
+    @include mq(md){
+        margin-top: rem(10);
+    }
+}
+
+.form__label span {
+    margin-left: rem(8);
+    padding: 3px 18px;
+    display: inline-block;
+    font-size: rem(12);
+    font-weight: 300;
+    color: $color-white;
+    // background-color: $color-red;
+    background-color: black;
+}
+
+.form__input,
+.form__select,
+.form__checkbox,
+.form__textarea {
+    margin-top: rem(16);
+    @include mq(md){
+        margin-top: 0;
+    }
+}
+
+.form__input,
+.form__textarea {
+    flex-grow: 1;
+}
+
+.form__check {
+    margin-top: rem(24);
+}
+
+// .form__check span {
+//     // border-top: solid 1px #000;
+// }
+
+.form__submit {
+    margin-top: rem(60);
+    text-align: center;
+}
+
+.form__textarea {
+    padding-bottom: 17px;
+    border-bottom: dashed 1px $color-green;
+}
+
+.form__check {
+    margin-top: rem(7);
+}

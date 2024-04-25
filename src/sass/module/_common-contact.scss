@@ -83,7 +83,8 @@
 }
 
 .common-contact__access-map {
-    margin-top: rem(16);
+    // margin-top: rem(16);
+    margin-top: rem(7);
 
     @include mq("md") {
         margin-top: rem(24);

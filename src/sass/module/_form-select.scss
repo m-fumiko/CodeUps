@@ -1,0 +1,50 @@
+@use "global" as *;
+
+.form-select {
+    position: relative;
+}
+
+.form-select::after {
+    position: absolute;
+    content: "";
+    // width: 8px;
+    // height: 8px;
+    border-right: 6px solid transparent;
+    border-left: 6px solid transparent;
+    border-top: 9px solid $color-green;
+    border-bottom: 0;
+    // border-width: 6px 0 6px 8px;
+    // border-color: transparent transparent transparent #333;
+    top: 13px;
+    right: 8px;
+    bottom: 0;
+    margin: auto;
+}
+
+.form-select select {
+    padding: rem(13) rem(50) rem(13) rem(8);
+    position: relative;
+    width: 100%;
+    font-size: rem(12);
+    line-height: 1;
+    border-radius: 0;
+    border: 1px solid $color-green;
+    background-image: url(./../images/common/arrow.svg);
+    background-repeat: no-repeat;
+    background-size: rem(15);
+    background-position: right rem(15) top rem(15);
+    appearance: none;
+    cursor: pointer;
+}
+
+
+
+.form-select select::-ms-expand {
+    display: none;
+}
+
+.form-select select:focus {
+    border: 1px solid #ccc;
+    box-shadow: none;
+    outline: none;
+}

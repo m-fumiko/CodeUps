@@ -7,7 +7,7 @@
     <meta name="format-detection" content="telephone=no" />
     <meta name="robots" content="noindex" />
     <!-- meta情報 -->
-    <title>CodeUps-blog-detail</title>
+    <title>CodeUps-price</title>
     <meta name="description" content="" />
     <meta name="keywords" content="" />
     <!-- ogp -->
@@ -50,7 +50,7 @@
                     <li class="header__nav-item"><a href="information.html">Information<span>ダイビング情報</span></a></li>
                     <li class="header__nav-item"><a href="blog.html">Blog<span>ブログ</span></a></li>
                     <li class="header__nav-item"><a href="voice.html">Voice<span>お客様の声</span></a></li>
-                    <li class="header__nav-item"><a href="price.html">Price<span>料金一覧</span></a></li>
+                    <li class="header__nav-item"><a href="pri">Price<span>料金一覧</span></a></li>
                     <li class="header__nav-item"><a href="faq.html">FAQ<span>よくある質問</span></a></li>
                     <li class="header__nav-item"><a href="contact.html">Contact<span>お問合せ</span></a></li>
                 </ul>
@@ -159,11 +159,11 @@
         <!-- sub-mv -->
         <div class="sub-mv">
             <div class="sub-mv__inner">
-                <h1 class="sub-mv__title">blog</h1>
+                <h1 class="sub-mv__title">price</h1>
                 <div class="sub-mv__img">
                     <picture>
-                        <source srcset="./assets/images/blog-mv-sp.jpg" media="(max-width: 768px)" />
-                        <img src="./assets/images/blog-mv.jpg" alt="無数の魚の群れが泳いでいる様子">
+                        <source srcset="./assets/images/price-img-sp.jpg" media="(max-width: 768px)" />
+                        <img src="./assets/images/price-img.jpg" alt="水面からダイバーの頭が出ている画像">
                     </picture>
                 </div>
             </div>
@@ -179,204 +179,297 @@
                 </span>
                 &nbsp;&gt;&nbsp;
                 <span>
-                    <a href="blog.html">
-                        <span class="current-item">ブログ一覧</span>
-                    </a>
-                </span>
-                &nbsp;&gt;&nbsp;
-                <span>
-                    <a href="blog-detail.html">
-                        <span class="current-item">ブログ詳細</span>
-                    </a>
+                    <span class="current-item">料金一覧</span>
                 </span>
                 <!-- Breadcrumb NavXTで出力される部分 ここまで -->
             </div>
         </div>
+        <!-- テーブル使うVer -->
+        <section class="price price-layout">
+            <div class="price__inner inner">
+                <table class="price__list price-list">
+                    <tbody>
+                        <tr class="price-list__row">
+                            <th class="price-list__title" rowspan="5"><span>ライセンス講習</span></th>
+                        </tr>
+                        <tr class="price-list__row">
+                            <td class="price-list__item">オープンウォーター<br class="u-mobile">ダイバーコース</td>
+                            <td class="price-list__value">¥50,000</td>
+                        </tr>
+                        <tr class="price-list__row">
+                            <td class="price-list__item">アドバンスド<br class="u-mobile">オープンウォーターコース</td>
+                            <td class="price-list__value">¥60,000</td>
+                        </tr>
+                        <tr class="price-list__row">
+                            <td class="price-list__item">レスキュー＋EFRコース</td>
+                            <td class="price-list__value">¥70,000</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="price__list price-list">
+                    <tbody>
+                        <tr class="price-list__row">
+                            <th class="price-list__title" rowspan="5"><span>体験ダイビング</span></th>
+                        </tr>
+                        <tr class="price-list__row">
+                            <td class="price-list__item">ビーチ体験ダイビング<br class="u-mobile">(半日)</td>
+                            <td class="price-list__value">¥7,000</td>
+                        </tr>
+                        <tr class="price-list__row">
+                            <td class="price-list__item">ビーチ体験ダイビング<br class="u-mobile">(1日)</td>
+                            <td class="price-list__value">¥14,000</td>
+                        </tr>
+                        <tr class="price-list__row">
+                            <td class="price-list__item">ボート体験ダイビング<br class="u-mobile">(半日)</td>
+                            <td class="price-list__value">¥10,000</td>
+                        </tr>
+                        <tr class="price-list__row">
+                            <td class="price-list__item">ボート体験ダイビング<br class="u-mobile">(1日)</td>
+                            <td class="price-list__value">¥18,000</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="price__list price-list">
+                    <tbody>
+                        <tr class="price-list__row">
+                            <th class="price-list__title" rowspan="5"><span>ファンダイビング</span></th>
+                        </tr>
+                        <tr class="price-list__row">
+                            <td class="price-list__item">ビーチダイビング<br class="u-mobile">(2ダイブ)</td>
+                            <td class="price-list__value">¥14,000</td>
+                        </tr>
+                        <tr class="price-list__row">
+                            <td class="price-list__item">ボートダイビング<br class="u-mobile">(2ダイブ)</td>
+                            <td class="price-list__value">¥18,000</td>
+                        </tr>
+                        <tr class="price-list__row">
+                            <td class="price-list__item">スペシャルダイビング<br class="u-mobile">(2ダイブ)</td>
+                            <td class="price-list__value">¥24,000</td>
+                        </tr>
+                        <tr class="price-list__row">
+                            <td class="price-list__item">ナイトダイビング<br class="u-mobile">(1ダイブ)</td>
+                            <td class="price-list__value">¥10,000</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="price__list price-list">
+                    <tbody>
+                        <tr class="price-list__row">
+                            <th class="price-list__title" rowspan="4"><span>スペシャルダイビング</span></th>
+                        </tr>
+                        <tr class="price-list__row">
+                            <td class="price-list__item">貸切ダイビング<br class="u-mobile">(2ダイブ)</td>
+                            <td class="price-list__value">¥24,000</td>
+                        </tr>
+                        <tr class="price-list__row">
+                            <td class="price-list__item">1日ダイビング<br class="u-mobile">(3ダイブ)</td>
+                            <td class="price-list__value">¥32,000</td>
+                        </tr>
+                        <tr class="price-list__row">
+                            <td class="price-list__item">ナイトダイビング<br class="u-mobile">(2ダイブ)</td>
+                            <td class="price-list__value">¥14,000</td>
+                        </tr>
+                    </tbody>
+                </table>
 
-        <!-- 詳細 -->
-        <div class="blog-detail blog-detail-layout">
-            <div class="blog-detail__inner inner">
-                <div class="blog-detail__wrap">
-                    <article class="blog-detail-main blog-detail-main-layout">
-                        <time class="blog-detail-main__date" datetime="2023-11-17">2023.11/17</time>
-                        <h2 class="blog-detail-main__title">ライセンス取得</h2>
-                        <div class="blog-detail-main__img"><img src="./assets/images/common/blog1.jpg"
-                                alt="ピンク色の綺麗な珊瑚礁の画像">
-                        </div>
-                        <p class="blog-detail-main__text">
-                            ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
-                        </p>
-                        <div class="blog-detail-main__img"><img src="./assets/images/common/blog1.jpg"
-                                alt="ピンク色の綺麗な珊瑚礁の画像"></div>
-                        <p class="blog-detail-main__text">
-                            ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
-                        </p>
-                        <ul class="blog-detail-main__items">
-                            <li class="blog-detail-main__item">リスト１</li>
-                            <li class="blog-detail-main__item">リスト2</li>
-                            <li class="blog-detail-main__item">リスト3</li>
+                <!-- テスト -->
+                <table class="price-list">
+                    <tbody>
+                      <tr>
+                        <th class="price-list__head">プラン</th>
+                        <th class="price-list__head">初期費用</th>
+                        <th class="price-list__head">月額料金</th>
+                      </tr>
+                      <tr>
+                        <td class="price-list__data">プランA</td>
+                        <td class="price-list__data">10,000円</td>
+                        <td class="price-list__data"><span>5,000円</span>2,500円</td>
+                      </tr>
+                      <tr>
+                        <td class="price-list__data">プランB</td>
+                        <td class="price-list__data">50,000円</td>
+                        <td class="price-list__data"><span>25,000円</span>17,500円</td>
+                      </tr>
+                      <tr>
+                        <td class="price-list__data">プランC</td>
+                        <td class="price-list__data">100,000円</td>
+                        <td class="price-list__data"><span>50,000円</span>25,000円</td>
+                      </tr>
+                      <tr>
+                        <td class="price-list__data">プランD</td>
+                        <td class="price-list__data">200,000円</td>
+                        <td class="price-list__data"><span>100,000円</span>50,000円</td>
+                      </tr>
+                    </tbody>
+                  </table>
+            </div>
+        </section>
+
+
+
+        <!-- テスト -->
+
+        <!-- <section class="price price-layout">
+            <div class="price__inner inner">
+                <ul class="price__items">
+                    <li class="price__item">
+                        <h3 class="price__title"><span>ライセンス講習</span></h3>
+                        <table class="price__list price-list">
+                            <tbody>
+                                <tr class="price-list__row">
+                                    <td class="price-list__item">オープンウォーター<br class="u-mobile">ダイバーコース</td>
+                                    <td class="price-list__value">¥50,000</td>
+                                </tr>
+                                <tr class="price-list__row">
+                                    <td class="price-list__item">アドバンスド<br class="u-mobile">オープンウォーターコース</td>
+                                    <td class="price-list__value">¥60,000</td>
+                                </tr>
+                                <tr class="price-list__row">
+                                    <td class="price-list__item">レスキュー＋EFRコース</td>
+                                    <td class="price-list__value">¥70,000</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </li>
+                    <li class="price__item">
+                        <h3 class="price__title"><span>体験ダイビング</span></h3>
+                        <table class="price__list price-list">
+                            <tbody>
+                                <tr class="price-list__row">
+                                    <td class="price-list__item">ビーチ体験ダイビング<br class="u-mobile">(半日)</td>
+                                    <td class="price-list__value">¥7,000</td>
+                                </tr>
+                                <tr class="price-list__row">
+                                    <td class="price-list__item">ビーチ体験ダイビング<br class="u-mobile">(1日)</td>
+                                    <td class="price-list__value">¥14,000</td>
+                                </tr>
+                                <tr class="price-list__row">
+                                    <td class="price-list__item">ボート体験ダイビング<br class="u-mobile">(半日)</td>
+                                    <td class="price-list__value">¥10,000</td>
+                                </tr>
+                                <tr class="price-list__row">
+                                    <td class="price-list__item">ボート体験ダイビング<br class="u-mobile">(1日)</td>
+                                    <td class="price-list__value">¥18,000</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </li>
+                    <li class="price__item">
+                        <h3 class="price__title"><span>ファンダイビング</span></h3>
+                        <table class="price__list price-list">
+                            <tbody>
+                                <tr class="price-list__row">
+                                    <td class="price-list__item">ビーチダイビング<br class="u-mobile">(2ダイブ)</td>
+                                    <td class="price-list__value">¥14,000</td>
+                                </tr>
+                                <tr class="price-list__row">
+                                    <td class="price-list__item">ボートダイビング<br class="u-mobile">(2ダイブ)</td>
+                                    <td class="price-list__value">¥18,000</td>
+                                </tr>
+                                <tr class="price-list__row">
+                                    <td class="price-list__item">スペシャルダイビング<br class="u-mobile">(2ダイブ)</td>
+                                    <td class="price-list__value">¥24,000</td>
+                                </tr>
+                                <tr class="price-list__row">
+                                    <td class="price-list__item">ナイトダイビング<br class="u-mobile">(1ダイブ)</td>
+                                    <td class="price-list__value">¥10,000</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </li>
+                    <li class="price__item">
+                        <h3 class="price__title"><span>スペシャルダイビング</span></h3>
+                        <table class="price__list price-list">
+                            <tbody>
+                                <tr class="price-list__row">
+                                    <td class="price-list__item">貸切ダイビング<br class="u-mobile">(2ダイブ)</td>
+                                    <td class="price-list__value">¥24,000</td>
+                                </tr>
+                                <tr class="price-list__row">
+                                    <td class="price-list__item">1日ダイビング<br class="u-mobile">(3ダイブ)</td>
+                                    <td class="price-list__value">¥32,000</td>
+                                </tr>
+                                <tr class="price-list__row">
+                                    <td class="price-list__item">ナイトダイビング<br class="u-mobile">(2ダイブ)</td>
+                                    <td class="price-list__value">¥14,000</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </li>
+                </ul>
+            </div>
+        </section> -->
+        <!-- テーブル使わないVer -->
+        <!-- <section class="price price-layout">
+            <div class="price__inner inner">
+                <div class="price__wrap">
+                    <div class="price__contents">
+                        <h3 class="price__head">
+                            タイトル
+                        </h3>
+                        <ul class="price__items">
+                            <li class="price__item">
+                                <dl>
+                                    <dt class="price__course">コース</dt>
+                                    <dd class="price__value">¥50,000</dd>
+                                </dl>
+                            </li>
+                            <li class="price__item">
+                                <dl>
+                                    <dt class="price__course">コース</dt>
+                                    <dd class="price__value">¥50,000</dd>
+                                </dl>
+                            </li>
+                            <li class="price__item">
+                                <dl>
+                                    <dt class="price__course">コース</dt>
+                                    <dd class="price__value">¥50,000</dd>
+                                </dl>
+                            </li>
                         </ul>
-                        <p class="blog-detail-main__text">
-                            ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。
-                        </p>
-                        <!-- ページネーション -->
-                        <div class="blog-detail__pagenavi wp-pagenavi">
-                            <!-- WP-PageNaviで出力される部分 ここから -->
-                            <a class="previouspostslink" rel="prev" href="#"></a>
-                            <a class="nextpostslink" rel="next" href="#"></a>
-                            <!-- WP-PageNaviで出力される部分 ここまで -->
-                        </div>
-                    </article>
-                    <aside class="blog-detail-side blog-side blog-side-layout">
-                        <!-- 人気記事 -->
-                        <div class="blog-side__items">
-                            <div class="blog-side__article blog-article">
-                                <h3 class="blog-article__title blog-side-title">人気記事
-                                </h3>
-                                <ul class="blog-article__items">
-                                    <li class="blog-article__item">
-                                        <a href="
-                                            ">
-                                            <div class="blog-article__flex">
-                                                <div class="blog-article__img">
-                                                    <img src="./assets/images/aboutus-gallery4.jpg"
-                                                        alt="一匹の黄色い熱帯魚が泳いでいる様子">
-                                                </div>
-                                                <div class="blog-article__contents">
-                                                    <time class="blog-article__date" datetime="2023-11-17">2023.11/17</time>
-                                                    <p class="blog-article__text">ライセンス取得
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li class="blog-article__item">
-                                        <a href="">
-                                            <div class="blog-article__flex">
-                                                <div class="blog-article__img">
-                                                    <img src="./assets/images/common/blog2.jpg"
-                                                        alt="ウミガメがこちらに向かって泳いで来る様子">
-                                                </div>
-                                                <div class="blog-article__contents">
-                                                    <time class="blog-article__date" datetime="2023-11-17">2023.11/17</time>
-                                                    <p class="blog-article__text">ウミガメと泳ぐ
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li class="blog-article__item">
-                                        <a href="">
-                                            <div class="blog-article__flex">
-                                                <div class="blog-article__img">
-                                                    <img src="./assets/images/common/blog3.jpg"
-                                                        alt="カクレクマノミがイソギンチャクの間から姿を現している様子">
-                                                </div>
-                                                <div class="blog-article__contents">
-                                                    <time class="blog-article__date" datetime="2023-11-17">2023.11/17</time>
-                                                    <p class="blog-article__text">カクレクマノミ
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <!-- 口コミ -->
-                        <div class="blog-side__items">
-                            <div class="blog-side__review blog-review">
-                                <h3 class="blog-review__title blog-side-title">口コミ
-                                </h3>
-                                <div class="blog-review__content">
-                                    <div class="blog-review__img">
-                                        <img src="assets/images/blog-side01.jpg" alt="30代男女のカップルの画像">
-                                    </div>
-                                    <div class="blog-review__contents">
-                                        <div class="blog-review__info">30代(カップル)</div>
-                                        <div class="blog-review__text">
-                                            ここにタイトルが入ります。ここにタイトル
-                                        </div>
-                                        <div class="blog-review__button-wrapper">
-                                            <a href="#" class="common-button">View more<span></span>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- キャンペーン -->
-                        <div class="blog-side__items">
-                            <div class="blog-side__campaign blog-campaign">
-                                <h3 class="blog-campaign__title blog-side-title">キャンペーン
-                                </h3>
-                                <ul class="blog-campaign__cards">
-                                    <li class="blog-campaign__card">
-                                        <div class="blog-campaign__card-img">
-                                            <img src="./assets/images/common/campaign1.jpg" alt="無数の熱帯魚が泳いでいる様子">
-                                        </div>
-                                        <div class="blog-campaign__card-content">
-                                            <p class="blog-campaign__card-title">ライセンス取得</p>
-                                            <p class="blog-campaign__card-text">全部コミコミ(お一人様)</p>
-                                            <div class="blog-campaign__card-price">
-                                                <p class="blog-campaign__card-black">¥56,000</p>
-                                                <p class="blog-campaign__card-green">¥46,000</p>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="blog-campaign__card">
-                                        <div class="blog-campaign__card-img">
-                                            <img src="./assets/images/common/campaign2.jpg" alt="浅瀬に船が浮かんでいる景色の画像">
-                                        </div>
-                                        <div class="blog-campaign__card-content">
-                                            <p class="blog-campaign__card-title">貸切体験ダイビング</p>
-                                            <p class="blog-campaign__card-text">全部コミコミ(お一人様)</p>
-                                            <div class="blog-campaign__card-price">
-                                                <p class="blog-campaign__card-black">¥24,000</p>
-                                                <p class="blog-campaign__card-green">¥18,000</p>
-                                            </div>
-                                        </div>
-                                    </li>
-                                </ul>
-                                <div class="blog-campaign__button-wrapper">
-                                    <a href="#" class="common-button">View more<span></span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- アーカイブ -->
-                        <div class="blog-side__items">
-                            <div class="blog-side__archive blog-archive">
-                                <h3 class="blog-archive__title blog-side-title">アーカイブ
-                                </h3>
-                                <div class="blog-archive__accordion">
-                                    <ul class="blog-archive__items">
-                                        <li class="blog-archive__item js-accordion__item">
-                                            <div class="blog-archive__year blog-archive__year--first js-accordion">
-                                                2023</div>
-                                            <ul class="blog-archive__month js-accordion__content">
-                                                <li class="blog-archive__month-item"><a href="#">3月</a></li>
-                                                <li class="blog-archive__month-item"><a href="#">2月</a></li>
-                                                <li class="blog-archive__month-item"><a href="#">1月</a></li>
-                                            </ul>
-                                        </li>
-                                        <li class="blog-archive__item">
-                                            <div class="blog-archive__year js-accordion">2022</div>
-                                            <ul class="blog-archive__month">
-                                                <li class="blog-archive__month-item"><a href="#">3月</a></li>
-                                                <li class="blog-archive__month-item"><a href="#">2月</a></li>
-                                                <li class="blog-archive__month-item"><a href="#">1月</a></li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </aside>
+                    </div>
+
                 </div>
             </div>
-        </div>
-
+        </section> -->
+        <!-- <table class="list">
+            <tbody>
+                <tr>
+                    <th>タイトル</th>
+                    <td>コース1</td>
+                    <td>¥1,000</td>
+                </tr>
+                <tr>
+                    <td>コース2</td>
+                    <td>¥2,000</td>
+                </tr>
+                <tr>
+                    <td>コース3</td>
+                    <td>¥3,000</td>
+                </tr>
+            </tbody>
+        </table> -->
+        <!-- <section class="price price-layout">
+            <div class="price__inner inner">
+                <table class="price__list price-list">
+                    <tbody>
+                        <tr class="price-list__row">
+                            <th class="price-list__head" rowspan="3"><span>ライセンス講習</span></th>
+                            <td class="price-list__item">オープンウォーター<br class="u-mobile">ダイバーコース</td>
+                            <td class="price-list__value">¥50,000</td>
+                        </tr>
+                        <tr class="price-list__row">
+                            <td class="price-list__item">アドバンスド<br class="u-mobile">オープンウォーターコース</td>
+                            <td class="price-list__value">¥60,000</td>
+                        </tr>
+                        <tr class="price-list__row">
+                            <td class="price-list__item">レスキュー＋EFRコース</td>
+                            <td class="price-list__value">¥70,000</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section> -->
         <!-- コンタクト -->
         <section class="common-contact campaign-contact-layout">
             <div class="common-contact__inner inner">
@@ -519,7 +612,7 @@
                         <div class="footer-menu__wrap">
                             <ul class="footer-menu__items">
                                 <li class="footer-menu__item">
-                                    <a class="footer-menu__item-title" href="faq.html">よくある質問</a>
+                                    <a class="footer-menu__item-title" href="faq">よくある質問</a>
                                 </li>
                             </ul>
                             <ul class="footer-menu__items">

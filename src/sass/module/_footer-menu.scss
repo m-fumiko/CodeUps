@@ -2,6 +2,7 @@
 
 .footer-menu {
     display: flex;
+    justify-content: space-around;
 
     @include mq("md") {
         display: grid;
@@ -10,11 +11,11 @@
 }
 
 .footer-menu__left {
-    margin-left: rem(23);
+    margin-left: rem(12);
 }
 
 .footer-menu__right {
-    margin-left: rem(40);
+    margin-left: rem(22);
 }
 
 .footer-menu__left,
