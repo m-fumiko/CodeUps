@@ -12,9 +12,9 @@
 }
 
 .faq-list__item-question {
-    padding-top: rem(16);
+    padding-top: rem(18);
     padding-right: rem(45);
-    padding-bottom: rem(16);
+    padding-bottom: rem(15);
     padding-left: rem(16);
     position: relative;
     font-size: rem(16);
@@ -22,13 +22,12 @@
     line-height: 1.5;
     color: $color-white;
     background-color: $color-green;
-    // text-indent: rem(-16);
     cursor: pointer;
 
     @include mq("md") {
-        padding-top: rem(26);
+        padding-top: rem(30);
         padding-right: rem(45);
-        padding-bottom: rem(26);
+        padding-bottom: rem(21);
         padding-left: rem(40);
         font-size: rem(20);
     }

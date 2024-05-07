@@ -1,6 +1,6 @@
 @use "global" as *;
 
-.footer-menu {
+.sitemap-menu {
     display: flex;
     justify-content: space-around;
 
@@ -10,25 +10,36 @@
     }
 }
 
-.footer-menu__left {
-    margin-left: rem(20);
+.sitemap-menu__left {
+    margin-left: rem(23);
 }
 
-.footer-menu__right {
-    margin-left: rem(37);
-}
+.sitemap-menu__right {
+    margin-left: rem(50);
 
-.footer-menu__left,
-.footer-menu__right {
     @include mq("md") {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: rem(45);
+        margin-left: rem(86);
     }
 }
 
-.footer-menu__wrap {
-    margin-top: rem(22);
+.sitemap-menu__left{
+    @include mq("md") {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: rem(101);
+    }
+}
+
+.sitemap-menu__right {
+    @include mq("md") {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: rem(135);
+    }
+}
+
+.sitemap-menu__wrap {
+    margin-top: rem(16);
 
     @include mq("md") {
         margin-top: 0
@@ -36,11 +47,15 @@
     }
 }
 
-.footer-menu__items + .footer-menu__items {
-    margin-top: rem(16);
+.sitemap-menu__items + .sitemap-menu__items {
+    margin-top: rem(19);
+
+    @include mq("md") {
+        margin-top: rem(18);
+    }
 }
 
-.footer-menu__item-title {
+.sitemap-menu__item-title {
     position: relative;
     display: block;
     padding-top: rem(12);
@@ -50,11 +65,11 @@
     font-weight: $bold;
     font-family: 'Noto Sans JP', sans-serif;
     line-height: 1;
-    color: $color-white;
+    white-space: nowrap;
 }
 
-.footer-menu__item-title::before {
-    background: url(../images/common/starfish.svg);
+.sitemap-menu__item-title::before {
+    background: url(../images/common/starfish02.svg);
     position: absolute;
     content: '';
     width: rem(18);
@@ -64,12 +79,11 @@
     z-index: 100;
 }
 
-.footer-menu__sub-item {
+.sitemap-menu__sub-item {
     padding-top: rem(12);
     padding-bottom: rem(12);
     font-size: rem(16);
     font-weight: 300;
     font-family: 'Noto Sans JP', sans-serif;
     line-height: calc(18/16);
-    color: $color-white;
 }

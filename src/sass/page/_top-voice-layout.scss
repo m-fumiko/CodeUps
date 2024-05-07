@@ -2,10 +2,8 @@
 
 .top-voice-layout {
     margin-top: rem(92);
-    // margin-bottom: rem(80);
 
     @include mq("md") {
         margin-top: rem(146);
-        // margin-bottom: rem(143);
     }
 }

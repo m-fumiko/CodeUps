@@ -7,7 +7,7 @@
     <meta name="format-detection" content="telephone=no" />
     <meta name="robots" content="noindex" />
     <!-- meta情報 -->
-    <title>CodeUps-contact</title>
+    <title>CodeUps-contact-error</title>
     <meta name="description" content="" />
     <meta name="keywords" content="" />
     <!-- ogp -->
@@ -137,12 +137,12 @@
                         </ul>
                         <ul class="drawer-menu__items">
                             <li class="drawer-menu__item">
-                                <a class="drawer-menu__item-title" href="privacy-policy.html">プライバシー<br>ポリシー</a>
+                                <a class="drawer-menu__item-title" href="#">プライバシー<br>ポリシー</a>
                             </li>
                         </ul>
                         <ul class="drawer-menu__items">
                             <li class="drawer-menu__item">
-                                <a class="drawer-menu__item-title" href="terms-of-service.html">利用規約</a>
+                                <a class="drawer-menu__item-title" href="#">利用規約</a>
                             </li>
                         </ul>
                         <ul class="drawer-menu__items">
@@ -181,18 +181,22 @@
                 <span>
                     <span class="current-item">お問い合わせ</span>
                 </span>
+                &nbsp;&gt;&nbsp;
+                <span>
+                    <span class="current-item">お問い合わせエラー</span>
+                </span>
                 <!-- Breadcrumb NavXTで出力される部分 ここまで -->
             </div>
         </div>
-
         <!-- コンタクトフォーム -->
-        <div class="contact contact-layout">
+        <div class="contact-error contact contact-error-layout">
             <div class="contact__inner inner">
-                <form class="contact__form form" action="">
+                <p class="contact-error__message">※必須項目が入力されていません。<br class="u-mobile">入力してください。</p>
+                <form class="contact__form form contact-error__form" action="">
                     <dl class="form__wrap">
                         <dt class="form__label">お名前<span>必須</span></dt>
-                        <dd class="form__input form-input">
-                            <input type="text" id="" name="" placeholder="沖縄&emsp;太郎">
+                        <dd class="form__input form-input form-input--error">
+                            <input type="text" id="name" name="name" placeholder="沖縄&emsp;太郎">
                         </dd>
                     </dl>
                     <dl class="form__wrap">
@@ -204,7 +208,7 @@
                     <dl class="form__wrap">
                         <dt class="form__label">電話番号<span>必須</span></dt>
                         <dd class="form__input form-input">
-                            <input type="tel" id="" name="" placeholder="000-0000-0000">
+                            <input type="tel" id="tel" name="tel" placeholder="000-0000-0000">
                         </dd>
                     </dl>
                     <dl class="form__wrap">
@@ -235,7 +239,7 @@
                     </dl>
                     <div class="form__check form-check">
                         <label>
-                            <input type="checkbox" name="" value=""><span>個人情報の取り扱いについて同意のうえ<br class="u-mobile">送信します。</span>
+                            <input type="checkbox" name="" value=""><span>個人情報の取り扱いについて同意のうえ <br class="u-mobile">送信します。</span>
                         </label>
                     </div>
                     <div class="form__submit form-submit">

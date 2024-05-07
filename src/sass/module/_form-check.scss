@@ -1,9 +1,16 @@
 @use "global" as *;
 
 .form-check {
+    margin-top: rem(24);
     margin-left: auto;
     margin-right: auto;
     width: 84.73913%;
+    text-align: center;
+
+    @include mq("md") {
+        margin-top: rem(-16);
+        padding-top: rem(49);
+    }
 }
 
 .form-check label {
@@ -11,20 +18,21 @@
 }
 
 .form-check input + span {
-    margin-top: rem(36);
+    margin-top: rem(34);
     cursor: pointer;
     display: inline-block;
-    padding: 0 0 0 rem(35);
+    padding-left: rem(30);
     position: relative;
     font-size: rem(14);
     line-height: 1.5;
+    text-align: left;
 }
 
 .form-check input + span::before {
     content: "";
     position: absolute;
-    top: 16%;
-    left: 6px;
+    top: 15%;
+    left: 0;
     transform: translateY(-50%);
     background: #fff;
     border: 1px solid $color-green;
@@ -37,14 +45,14 @@
     content: "";
     margin-top: rem(-2);
     position: absolute;
-    top: 16%;
-    left: 9px;
+    top: 15%;
+    left: rem(3);
     transform: translateY(-50%) rotate(-45deg);
     display: block;
     width: rem(15);
     height: rem(8);
-    border-bottom: rem(3) solid #000;
-    border-left: rem(3) solid #000;
+    border-bottom: rem(2) solid #C94800;
+    border-left: rem(2) solid #C94800;
     transition:  .3s;
     opacity: 0;
 }

@@ -17,6 +17,7 @@
 
 .common-button:hover {
     opacity: 1;
+    color: $color-green;
 }
 
 .common-button::before {
@@ -31,10 +32,6 @@
     transform-origin: left top;
     transition: .3s cubic-bezier(0.45, 0, 0.55, 1);
     z-index: -1;
-}
-
-.common-button:hover {
-    color: $color-green;
 }
 
 .common-button:hover::before {
@@ -72,9 +69,7 @@
 
 .common-button:hover span::before,
 .common-button:hover span::after {
-    @include mq("md") {
-        background: $color-green;
-    }
+    background: $color-green;
 }
 
 .common-button::after {

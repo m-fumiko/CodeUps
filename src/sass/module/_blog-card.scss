@@ -1,8 +1,12 @@
 @use "global" as *;
 
 .blog-card a {
-    padding: rem(16) rem(16) rem(24);
+    padding-top: rem(16);
+    padding-right: rem(16);
+    padding-left: rem(16);
+    padding-bottom: rem(24);
     display: block;
+    width: 96.5217391%;
     height: 100%;
     background: $color-white;
     box-shadow: rem(2) rem(2) rem(10) 0 rgba(0, 0, 0, .25);

@@ -1,13 +1,13 @@
 @use "global" as *;
 
-.faq {
+.thanks {
     position: relative;
 }
 
-.faq::after {
+.thanks::after {
     content: "";
     position: absolute;
-    top: rem(-23);
+    top: rem(-21);
     left: calc(50% - min(46vw, rem(620)));
     width: rem(120);
     height: rem(55);
@@ -18,9 +18,21 @@
     z-index: -1;
 
     @include mq("md") {
-        top: rem(-68);
+        top: rem(-67);
         left: calc(50% - min(49vw, rem(620)));
         width: rem(300);
         height: rem(138);
     }
+}
+
+.thanks__text {
+    margin-top: rem(35);
+}
+
+.thanks__top-text,
+.thanks__text {
+    font-size: rem(16);
+    font-weight: $regular;
+    font-family: 'Noto Sans JP',sans-serif;
+    text-align: center;
 }

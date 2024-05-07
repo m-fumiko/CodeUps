@@ -1,13 +1,13 @@
 @use "global" as *;
 
-.faq {
+.contact {
     position: relative;
 }
 
-.faq::after {
+.contact::after {
     content: "";
     position: absolute;
-    top: rem(-23);
+    top: rem(-28);
     left: calc(50% - min(46vw, rem(620)));
     width: rem(120);
     height: rem(55);
@@ -18,9 +18,16 @@
     z-index: -1;
 
     @include mq("md") {
-        top: rem(-68);
-        left: calc(50% - min(49vw, rem(620)));
+        top: rem(-17);
+        left: calc(50% - min(49vw, rem(530
+        )));
         width: rem(300);
         height: rem(138);
+    }
+}
+
+.contact__inner.inner {
+    @include mq("md") {
+        padding: 0 rem(100);
     }
 }
