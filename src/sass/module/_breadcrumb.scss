@@ -1,9 +1,5 @@
 @use "global" as *;
 
-.breadcrumb {
-    margin-top: rem(8);
-}
-
 .breadcrumb__inner {
     margin: auto;
     padding: 0 rem(15);
@@ -21,4 +17,13 @@
     font-family: 'Noto Sans JP',sans-serif;
     color: $color-black;
     text-transform: uppercase;
+}
+
+.breadcrumb.breadcrumb--not-found {
+    background-color: $color-green;
+    color: $color-white;
+}
+
+.breadcrumb.breadcrumb--not-found span {
+    color: $color-white;
 }

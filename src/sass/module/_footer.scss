@@ -73,3 +73,11 @@
         line-height: calc(18/14);
     }
 }
+
+.footer.footer--not-found {
+    padding-top: rem(91);
+
+    @include mq("md") {
+        padding-top: rem(232);
+    }
+}

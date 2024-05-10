@@ -82,3 +82,37 @@
     border: solid 1px $color-green;
     z-index: -2;
 }
+
+.common-button.common-button--white {
+    color: $color-green;
+    background-color: $color-white;
+    border: 1px solid $color-white;
+}
+
+.common-button.common-button--white:hover {
+    opacity: 1;
+    color: $color-white;
+    background-color: $color-green;
+}
+
+.common-button.common-button--white::before {
+    background-color: $color-green;
+}
+
+.common-button.common-button--white span::before {
+    background-color: $color-green;
+}
+
+.common-button.common-button--white  span::after {
+    background: $color-green;
+    right: rem(29);
+}
+
+.common-button.common-button--white::after {
+    border: solid 1px $color-white;
+}
+
+.common-button.common-button--white:hover span::before,
+.common-button.common-button--white:hover span::after {
+    background: $color-white;
+}

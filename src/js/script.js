@@ -154,7 +154,6 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
     $(function () {
         const open = $(".js-modal-open"),
             close = $(".js-modal-close");
-
         // 各画像のクリックイベントを個別に処理
         open.on("click", function () {
             // クリックされた画像のdata-target属性値を取得
@@ -162,10 +161,14 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
             // 対応するモーダルを開く
             $(`#gallery-modal-${target}`).addClass("is-open");
         });
-
         // 閉じるボタンをクリックしたらモーダルを閉じる
         close.on("click", function () {
             $(this).closest(".gallery-modal__item").removeClass("is-open");
+        });
+        // 新しいgallery__itemに対するクリックイベントを設定
+        $(".gallery__items").on("click", ".gallery__item", function () {
+            const target = $(this).data("target");
+            $(`#gallery-modal-${target}`).addClass("is-open");
         });
     });
 
@@ -197,44 +200,6 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
             $(this).toggleClass('clicked');
         });
     });
-
-    // テストモーダル
-    $(function(){
-        $(".thumbnail").click(function() {
-        $('body').addClass('is-fixed');
-          $(".modal-inner").html($(this).prop('outerHTML'));
-          $(".modal").fadeIn();
-        });
-        $(".modal, .modal-inner").click(function() {
-            $(".modal").fadeOut();
-            $('body').removeClass('is-fixed');
-        });
-     });
-
-    // $('.title').on('click', function() {//タイトル要素をクリックしたら
-    //     $('.box').slideUp(500);//クラス名.boxがついたすべてのアコーディオンを閉じる
-
-    //     var findElm = $(this).next(".box");//タイトル直後のアコーディオンを行うエリアを取得
-
-    //     if($(this).hasClass('close')){//タイトル要素にクラス名closeがあれば
-    //       $(this).removeClass('close');//クラス名を除去    
-    //     }else{//それ以外は
-    //       $('.close').removeClass('close'); //クラス名closeを全て除去した後
-    //       $(this).addClass('close');//クリックしたタイトルにクラス名closeを付与し
-    //       $(findElm).slideDown(500);//アコーディオンを開く
-    //     }
-    //   });
-
-    //   //ページが読み込まれた際にopenクラスをつけ、openがついていたら開く動作※不必要なら下記全て削除
-    //   $(window).on('load', function(){
-    //     $('.accordion-area li:first-of-type section').addClass("open"); //accordion-areaのはじめのliにあるsectionにopenクラスを追加
-    //     $(".open").each(function(index, element){ //openクラスを取得
-    //       var Title =$(element).children('.title'); //openクラスの子要素のtitleクラスを取得
-    //       $(Title).addClass('close');       ///タイトルにクラス名closeを付与し
-    //       var Box =$(element).children('.box'); //openクラスの子要素boxクラスを取得
-    //       $(Box).slideDown(500);          //アコーディオンを開く
-    //     });
-    //   });
 
     // アコーディオン
     jQuery(function ($) {

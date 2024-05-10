@@ -3,6 +3,10 @@
 .top-button-layout {
     position: fixed;
     z-index: 1000;
-    bottom: 0;
-    right: 15px;
+    bottom: rem(15);
+    right: rem(15);
+    @include mq("md") {
+        bottom: rem(20);
+        right: rem(20);
+    }
 }

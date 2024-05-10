@@ -7,7 +7,7 @@
     <meta name="format-detection" content="telephone=no" />
     <meta name="robots" content="noindex" />
     <!-- meta情報 -->
-    <title>CodeUps-thanks</title>
+    <title>CodeUps-404</title>
     <meta name="description" content="" />
     <meta name="keywords" content="" />
     <!-- ogp -->
@@ -37,7 +37,7 @@
 
 <body>
     <div class="wrap">
-        <header class="header header-layout  js-header">
+        <header class="header header-layout js-header">
             <div class="header__inner">
                 <div class="header__logo">
                     <a href="index.html">
@@ -138,12 +138,12 @@
                             </ul>
                             <ul class="drawer-menu__items">
                                 <li class="drawer-menu__item">
-                                    <a class="drawer-menu__item-title" href="#">プライバシー<br>ポリシー</a>
+                                    <a class="drawer-menu__item-title" href="privacy-policy.html">プライバシー<br>ポリシー</a>
                                 </li>
                             </ul>
                             <ul class="drawer-menu__items">
                                 <li class="drawer-menu__item">
-                                    <a class="drawer-menu__item-title" href="#">利用規約</a>
+                                    <a class="drawer-menu__item-title" href="terms-of-service.html">利用規約</a>
                                 </li>
                             </ul>
                             <ul class="drawer-menu__items">
@@ -162,20 +162,8 @@
             </div>
         </header>
         <main>
-            <!-- sub-mv -->
-            <div class="sub-mv">
-                <div class="sub-mv__inner">
-                    <h1 class="sub-mv__title">contact</h1>
-                    <div class="sub-mv__img">
-                        <picture>
-                            <source srcset="./assets/images/contact-sp-img.jpg" media="(max-width: 768px)" />
-                            <img src="./assets/images/contact-img.jpg" alt="砂浜と青い海">
-                        </picture>
-                    </div>
-                </div>
-            </div>
             <!-- パンくず -->
-            <div class="breadcrumb breadcrumb-layout">
+            <div class="breadcrumb breadcrumb--not-found breadcrumb-not-found-layout">
                 <div class="breadcrumb__inner inner">
                     <!-- Breadcrumb NavXTで出力される部分 ここから -->
                     <span>
@@ -185,33 +173,26 @@
                     </span>
                     &nbsp;&gt;&nbsp;
                     <span>
-                        <span class="current-item">お問い合わせ</span>
-                    </span>
-                    &nbsp;&gt;&nbsp;
-                    <span>
-                        <span class="current-item">送信完了</span>
+                        <span class="current-item">404</span>
                     </span>
                     <!-- Breadcrumb NavXTで出力される部分 ここまで -->
                 </div>
             </div>
-            <div class="thanks thanks-layout">
-                <div class="tanks__inner inner">
-                    <p class="thanks__top-text">
-                        お問い合わせ内容を送信完了しました。</p>
-                    <p class="thanks__text">このたびは、お問い合わせ頂き<br class="u-mobile">誠にありがとうございます。<br>お送り頂きました内容を確認の上、<br
-                            class="u-mobile">3営業日以内に折り返しご連絡させて頂きます。<br>また、ご記入頂いたメールアドレスへ、<br
-                            class="u-mobile">自動返信の確認メールをお送りしております。</p>
+            <section class="not-found not-found-layout">
+                <div class="not-found__inner inner">
+                    <div class="not-found__wrap">
+                        <h1 class="not-found__number">404</h1>
+                        <p class="not-found__text">申し訳ありません。<br>お探しのページが見つかりません。</p>
+                        <div class="not-found____button-wrapper">
+                            <a href="index.html" class="common-button common-button--white">Page TOP<span></span>
+                            </a>
+                          </div>
+                    </div>
                 </div>
-            </div>
+            </section>
         </main>
-        <!-- トップに戻るボタン -->
-        <div class="top-button top-button-layout js-top-button">
-            <a href="">
-                <img src="./assets/images/common/top.svg" alt="PAGE TOP">
-            </a>
-        </div>
         <!-- フッター -->
-        <footer class="footer thanks-footer-layout">
+        <footer class="footer footer--not-found">
             <div class="footer__inner inner">
                 <div class="footer__wrap">
                     <div class="footer__top">
@@ -337,5 +318,4 @@
         </footer>
     </div>
 </body>
-
 </html>
