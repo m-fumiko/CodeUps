@@ -24,7 +24,6 @@
 
 // 前後矢印
 .top-campaign__swiper-button {
-
     @include mq("md") {
         display: flex;
         position: absolute;
@@ -76,7 +75,6 @@
     margin-top: rem(31);
     margin-right: calc(50% - 50vw);
     width: 100vw;
-
     @include mq("md") {
         margin-top: rem(46);
     }
@@ -86,7 +84,6 @@
     padding: rem(3) 0;
     height: auto;
     margin-right: rem(20);
-    
     @include mq("md") {
         margin-right: rem(40);
     }
@@ -100,7 +97,6 @@
     margin-top: rem(34);
     padding-bottom: rem(4);
     text-align: center;
-
     @include mq("md") {
         margin-top: rem(76);
     }

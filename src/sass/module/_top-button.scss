@@ -4,7 +4,6 @@
     width: rem(48);
     height: rem(48);
     cursor: pointer;
-
     @include mq("md") {
         width: rem(80);
         height: rem(80);

@@ -1,37 +1,11 @@
 @use "global" as *;
 
-// .tag__inner {
-//     position: relative;
-// }
-
-// .tag__inner::after {
-//     content: "";
-//     position: absolute;
-//     top: rem(-23);
-//     left: calc(50% - min(46vw, rem(620)));
-//     width: rem(120);
-//     height: rem(55);
-//     background-image: url(../images/top/hanadai-top-voice.svg);
-//     background-repeat: no-repeat;
-//     background-position: center;
-//     background-size: contain;
-//     z-index: -1;
-
-//     @include mq("md") {
-//         top: rem(-74);
-//         left: calc(50% - min(49vw, rem(620)));
-//         width: rem(300);
-//         height: rem(138);
-//     }
-// }
-
 .tag__items {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-column-gap: rem(20);
     grid-row-gap: rem(16);
-
     @include mq("md") {
         display: flex;
         flex-wrap: wrap;
@@ -50,7 +24,6 @@
     color: $color-green;
     border: solid 1px $color-green;
     transition: .3s;
-
     @include mq("md") {
         width: fit-content;
     }

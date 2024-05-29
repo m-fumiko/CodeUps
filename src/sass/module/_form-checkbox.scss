@@ -3,7 +3,6 @@
 .form-checkbox {
     display: flex;
     flex-direction: column;
-
     @include mq("md") {
         margin-left: 30px;
     }
@@ -11,7 +10,6 @@
 
 .form-checkbox label {
     display: block;
-
     @include mq(md) {
         display: inline-block;
     }

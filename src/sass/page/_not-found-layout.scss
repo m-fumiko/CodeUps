@@ -2,7 +2,6 @@
 
 .not-found-layout {
     padding-top: rem(38);
-
     @include mq("md") {
         padding-top: rem(92);
     }

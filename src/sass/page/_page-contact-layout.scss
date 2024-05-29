@@ -2,12 +2,7 @@
 
 .page-contact-layout {
     margin-top: rem(107);
-    // サイトマップ
-    // margin-top: rem(93);
-
     @include mq("md") {
         margin-top: rem(140);
-        // サイトマップ
-        // margin-top: rem(128);
     }
 }

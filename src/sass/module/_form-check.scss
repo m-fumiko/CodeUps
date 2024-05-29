@@ -6,7 +6,6 @@
     margin-right: auto;
     width: 84.73913%;
     text-align: center;
-
     @include mq("md") {
         margin-top: rem(-16);
         padding-top: rem(49);
@@ -31,7 +30,7 @@
 .form-check input + span::before {
     content: "";
     position: absolute;
-    top: 15%;
+    top: 20%;
     left: 0;
     transform: translateY(-50%);
     background: #fff;
@@ -39,13 +38,17 @@
     display: block;
     width: rem(22);
     height: rem(22);
+    @include mq("md") {
+        top: 37%;
+        left: rem(-7);
+    }
 }
 
 .form-check input + span::after {
     content: "";
     margin-top: rem(-2);
     position: absolute;
-    top: 15%;
+    top: 17%;
     left: rem(3);
     transform: translateY(-50%) rotate(-45deg);
     display: block;
@@ -55,6 +58,10 @@
     border-left: rem(2) solid #C94800;
     transition:  .3s;
     opacity: 0;
+    @include mq("md") {
+        top: 37%;
+        left: rem(-3);
+    }
 }
 
 .form-check input:checked + span::after {

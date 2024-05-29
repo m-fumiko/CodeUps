@@ -35,7 +35,6 @@
 
 .top-blog__list {
     margin-top: rem(30);
-
     @include mq("md") {
         margin-top: rem(86);
     }
@@ -49,7 +48,6 @@
 .top-blog__button-wrapper {
     margin-top: rem(35);
     text-align: center;
-
     @include mq("md") {
         margin-top: rem(83);
     }

@@ -6,3 +6,12 @@
         gap: rem(80);
     }
 }
+
+.blog__inner.inner {
+    padding-left: rem(20);
+    padding-right: rem(20);
+    @include mq("md") {
+        padding-left: rem(25);
+        padding-right: rem(25);
+    }
+}

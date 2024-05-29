@@ -4,8 +4,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-
-
     @include mq("md") {
         justify-content: space-between;
     }
@@ -25,7 +23,6 @@
     box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.25);
     cursor: pointer;
     transition: .3s;
-
     @include mq("md") {
         padding: rem(13) 0;
         min-width: rem(300);
@@ -61,12 +58,6 @@
     }
 }
 
-.information-tab__menu-item.is-active::before {
-    @include mq("md") {
-        mask-image: url(../images/ocean_sea_icon2.svg);
-    }
-}
-
 .information-tab__menu-item--icon02::before {
     @include mq("md") {
         mask-image: url(../images/shark_icon1.svg);
@@ -86,7 +77,6 @@
 
 .information-tab__menu-item+.information-tab__menu-item {
     margin-left: rem(20);
-
     @include mq("md") {
         margin-left: 0;
     }
@@ -103,7 +93,6 @@
 
 .information-tab__content {
     margin-top: rem(16);
-
     @include mq("md") {
         margin-top: rem(24);
     }
@@ -162,7 +151,6 @@
 
 .information-tab__img {
     margin-top: rem(8);
-
     @include mq("md") {
         margin-top: 0;
         margin-left: rem(48);
@@ -175,7 +163,6 @@
     aspect-ratio: 297/189;
     width: 100%;
     object-fit: cover;
-
     @include mq("md") {
         aspect-ratio: 492/313;
     }

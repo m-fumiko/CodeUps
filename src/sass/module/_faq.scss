@@ -16,11 +16,16 @@
     background-position: center;
     background-size: contain;
     z-index: -1;
-
     @include mq("md") {
         top: rem(-68);
         left: calc(50% - min(49vw, rem(620)));
         width: rem(300);
         height: rem(138);
+    }
+}
+
+.faq__inner.inner {
+    @include mq("md") {
+        max-width: rem(750);
     }
 }

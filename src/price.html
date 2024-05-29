@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="ja">
-
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
@@ -34,7 +33,6 @@
     <script defer src="./assets/js/jquery.inview.min.js"></script>
     <script defer src="./assets/js/script.js"></script>
 </head>
-
 <body>
     <header class="header header-layout  js-header">
         <div class="header__inner">
@@ -91,13 +89,13 @@
                                 <a class="drawer-menu__item-title" href="information.html">ダイビング情報</a>
                                 <ul class="drawer-menu__sub-items">
                                     <li class="drawer-menu__sub-item">
-                                        <a href="#">ライセンス講習</a>
+                                        <a href="information.html?tab=tab01">ライセンス講習</a>
                                     </li>
                                     <li class="drawer-menu__sub-item">
-                                        <a href="#">体験ダイビング</a>
+                                        <a href="information.html?tab=tab02">体験ダイビング</a>
                                     </li>
                                     <li class="drawer-menu__sub-item">
-                                        <a href="#">ファンダイビング</a>
+                                        <a href="information.html?tab=tab03">ファンダイビング</a>
                                     </li>
                                 </ul>
                             </li>
@@ -152,9 +150,9 @@
                         </ul>
                         <ul class="drawer-menu__items">
                             <li class="drawer-menu__item">
-                              <a class="drawer-menu__item-title" href="sitemap.html">サイトマップ</a>
+                                <a class="drawer-menu__item-title" href="sitemap.html">サイトマップ</a>
                             </li>
-                          </ul>
+                        </ul>
                     </div>
                 </nav>
             </div>
@@ -192,82 +190,84 @@
         <!-- 料金表 -->
         <section class="price price-layout">
             <div class="price__inner inner">
-                <table class="price__list price-list">
-                    <tbody>
-                        <tr class="price-list__row">
-                            <th class="price-list__title" rowspan="3"><span>ライセンス講習</span></th>
-                            <td class="price-list__item">オープンウォーター<br class="u-mobile">ダイバーコース</td>
-                            <td class="price-list__value">¥50,000</td>
-                        </tr>
-                        <tr class="price-list__row">
-                            <td class="price-list__item">アドバンスド<br class="u-mobile">オープンウォーターコース</td>
-                            <td class="price-list__value">¥60,000</td>
-                        </tr>
-                        <tr class="price-list__row">
-                            <td class="price-list__item"><span>レスキュー＋EFRコース</span></td>
-                            <td class="price-list__value">¥70,000</td>
-                        </tr>
-                    </tbody>
-                </table>
-                <table class="price__list price-list">
-                    <tbody>
-                        <tr class="price-list__row">
-                            <th class="price-list__title" rowspan="4"><span>体験ダイビング</span></th>
-                            <td class="price-list__item">ビーチ体験ダイビング<br class="u-mobile">(半日)</td>
-                            <td class="price-list__value">¥7,000</td>
-                        </tr>
-                        <tr class="price-list__row">
-                            <td class="price-list__item">ビーチ体験ダイビング<br class="u-mobile">(1日)
-                            <td class="price-list__value">¥14,000</td>
-                        </tr>
-                        <tr class="price-list__row">
-                            <td class="price-list__item">ボート体験ダイビング<br class="u-mobile">(半日)</td>
-                            <td class="price-list__value">¥10,000</td>
-                        </tr>
-                        <tr class="price-list__row">
-                            <td class="price-list__item">ボート体験ダイビング<br class="u-mobile">(1日)</td>
-                            <td class="price-list__value">¥18,000</td>
-                        </tr>
-                    </tbody>
-                </table>
-                <table class="price__list price-list">
-                    <tbody>
-                        <tr class="price-list__row">
-                            <th class="price-list__title" rowspan="4"><span>ファンダイビング</span></th>
-                            <td class="price-list__item">ビーチダイビング<br class="u-mobile">(2ダイブ)</td>
-                            <td class="price-list__value">¥14,000</td>
-                        </tr>
-                        <tr class="price-list__row">
-                            <td class="price-list__item">ボートダイビング<br class="u-mobile">(2ダイブ)</td>
-                            <td class="price-list__value">¥18,000</td>
-                        </tr>
-                        <tr class="price-list__row">
-                            <td class="price-list__item">スペシャルダイビング<br class="u-mobile">(2ダイブ)</td>
-                            <td class="price-list__value">¥24,000</td>
-                        </tr>
-                        <tr class="price-list__row">
-                            <td class="price-list__item">ナイトダイビング<br class="u-mobile">(1ダイブ)</td>
-                            <td class="price-list__value">¥10,000</td>
-                        </tr>
-                    </tbody>
-                </table>
-                <table class="price__list price-list">
-                    <tbody>
-                        <tr class="price-list__row">
-                            <th class="price-list__title" rowspan="3"><span>スペシャルダイビング</span></th>
-                            <td class="price-list__item">貸切ダイビング<br class="u-mobile">(2ダイブ)</td>
-                            <td class="price-list__value">¥24,000</td>
-                        </tr>
-                        <tr class="price-list__row">
-                            <td class="price-list__item">1日ダイビング<br class="u-mobile">(3ダイブ)</td>
-                            <td class="price-list__value">¥32,000</td>
-                        </tr>
-                        <tr class="price-list__row">
-                            <td class="price-list__item">ナイトダイビング<br class="u-mobile">(2ダイブ)</td>
-                            <td class="price-list__value">¥70,000</td>
-                        </tr>
-                    </tbody>
-                </table>
+                <div class="price__tables price-tables">
+                    <table class="price-tables__item price-list">
+                        <tbody>
+                            <tr class="price-list__row">
+                                <th class="price-list__title" rowspan="3"><span>ライセンス講習</span></th>
+                                <td class="price-list__item">オープンウォーター<br class="u-mobile">ダイバーコース</td>
+                                <td class="price-list__value">¥50,000</td>
+                            </tr>
+                            <tr class="price-list__row">
+                                <td class="price-list__item">アドバンスド<br class="u-mobile">オープンウォーターコース</td>
+                                <td class="price-list__value">¥60,000</td>
+                            </tr>
+                            <tr class="price-list__row">
+                                <td class="price-list__item"><span>レスキュー＋EFRコース</span></td>
+                                <td class="price-list__value">¥70,000</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="price-tables__item price-list">
+                        <tbody>
+                            <tr class="price-list__row">
+                                <th class="price-list__title" rowspan="4"><span>体験ダイビング</span></th>
+                                <td class="price-list__item">ビーチ体験ダイビング<br class="u-mobile">(半日)</td>
+                                <td class="price-list__value">¥7,000</td>
+                            </tr>
+                            <tr class="price-list__row">
+                                <td class="price-list__item">ビーチ体験ダイビング<br class="u-mobile">(1日)
+                                <td class="price-list__value">¥14,000</td>
+                            </tr>
+                            <tr class="price-list__row">
+                                <td class="price-list__item">ボート体験ダイビング<br class="u-mobile">(半日)</td>
+                                <td class="price-list__value">¥10,000</td>
+                            </tr>
+                            <tr class="price-list__row">
+                                <td class="price-list__item">ボート体験ダイビング<br class="u-mobile">(1日)</td>
+                                <td class="price-list__value">¥18,000</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="price-tables__item price-list">
+                        <tbody>
+                            <tr class="price-list__row">
+                                <th class="price-list__title" rowspan="4"><span>ファンダイビング</span></th>
+                                <td class="price-list__item">ビーチダイビング<br class="u-mobile">(2ダイブ)</td>
+                                <td class="price-list__value">¥14,000</td>
+                            </tr>
+                            <tr class="price-list__row">
+                                <td class="price-list__item">ボートダイビング<br class="u-mobile">(2ダイブ)</td>
+                                <td class="price-list__value">¥18,000</td>
+                            </tr>
+                            <tr class="price-list__row">
+                                <td class="price-list__item">スペシャルダイビング<br class="u-mobile">(2ダイブ)</td>
+                                <td class="price-list__value">¥24,000</td>
+                            </tr>
+                            <tr class="price-list__row">
+                                <td class="price-list__item">ナイトダイビング<br class="u-mobile">(1ダイブ)</td>
+                                <td class="price-list__value">¥10,000</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="price-tables__item price-list">
+                        <tbody>
+                            <tr class="price-list__row">
+                                <th class="price-list__title" rowspan="3"><span>スペシャルダイビング</span></th>
+                                <td class="price-list__item">貸切ダイビング<br class="u-mobile">(2ダイブ)</td>
+                                <td class="price-list__value">¥24,000</td>
+                            </tr>
+                            <tr class="price-list__row">
+                                <td class="price-list__item">1日ダイビング<br class="u-mobile">(3ダイブ)</td>
+                                <td class="price-list__value">¥32,000</td>
+                            </tr>
+                            <tr class="price-list__row">
+                                <td class="price-list__item">ナイトダイビング<br class="u-mobile">(2ダイブ)</td>
+                                <td class="price-list__value">¥70,000</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </section>
         <!-- コンタクト -->
@@ -323,7 +323,7 @@
             <div class="footer__wrap">
                 <div class="footer__top">
                     <div class="footer__logo">
-                            <img src="./assets/images/common/CodeUps-logo2.svg" alt="CodeUps">
+                        <img src="./assets/images/common/CodeUps-logo2.svg" alt="CodeUps">
                     </div>
                     <div class="footer__sns">
                         <a class="footer__sns-icon" href="" target="_blank">
@@ -365,13 +365,13 @@
                                     <a class="footer-menu__item-title" href="information.html">ダイビング情報</a>
                                     <ul class="footer-menu__sub-items">
                                         <li class="footer-menu__sub-item">
-                                            <a href="#">ライセンス講習</a>
+                                            <a href="information.html?tab=tab01">ライセンス講習</a>
                                         </li>
                                         <li class="footer-menu__sub-item">
-                                            <a href="#">体験ダイビング</a>
+                                            <a href="information.html?tab=tab02">体験ダイビング</a>
                                         </li>
                                         <li class="footer-menu__sub-item">
-                                            <a href="#">ファンダイビング</a>
+                                            <a href="information.html?tab=tab03">ファンダイビング</a>
                                         </li>
                                     </ul>
                                 </li>
@@ -443,5 +443,4 @@
         </div>
     </footer>
 </body>
-
 </html>

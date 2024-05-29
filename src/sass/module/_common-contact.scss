@@ -15,7 +15,6 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-
     @include mq("md") {
         top: rem(-40);
         right: calc(50% - min(48vw, rem(670)));
@@ -38,7 +37,6 @@
 .common-contact__access {
     margin: 0 auto;
     width: 85.5072464%;
-
     @include mq("md") {
         // padding-left: 52px;
         margin: auto;
@@ -60,7 +58,6 @@
 .common-contact__access-info {
     border-top: rem(1) solid $color-green;
     text-align: center;
-
     @include mq("md") {
         display: flex;
         text-align: left;
@@ -69,7 +66,6 @@
 
 .common-contact__access-text-wrap {
     margin-top: rem(16);
-
     @include mq("md") {
         margin-top: rem(24);
     }
@@ -83,9 +79,7 @@
 }
 
 .common-contact__access-map {
-    // margin-top: rem(16);
     margin-top: rem(7);
-
     @include mq("md") {
         margin-top: rem(24);
         margin-left: rem(24);

@@ -27,7 +27,6 @@
     margin-top: rem(36);
     display: flex;
     flex-direction: column;
-
     @include mq("md") {
         margin-top: rem(44);
     }
@@ -35,7 +34,6 @@
 
 .top-about__img-wrap {
     display: flex;
-
     @include mq("md") {
         position: relative;
     }
@@ -49,7 +47,6 @@
     left: 4%;
     z-index: 1;
     aspect-ratio: 128/194;
-
     @include mq("md") {
         max-width: 37.111111%;
         top: 0;
@@ -73,7 +70,6 @@
     position: relative;
     z-index: 0;
     aspect-ratio: 281/186;
-
     @include mq("md") {
         margin-top: rem(80);
         max-width: 81.4814815%;
@@ -104,7 +100,6 @@
 
 .top-about__content-right {
     margin-top: rem(16);
-    
     @include mq("md") {
         padding-left: rem(10);
         max-width: 49%;
@@ -117,7 +112,6 @@
     font-weight: $regular;
     line-height: 1;
     color: $color-green;
-
     @include mq("md") {
         max-width: 50%;
         width: 100%;
@@ -141,7 +135,6 @@
 .top-about__button-wrapper {
     margin-top: rem(24);
     text-align: center;
-
     @include mq("md") {
         margin-top: rem(38);
     }

@@ -4,7 +4,6 @@
     font-size: rem(32);
     font-weight: $regular;
     line-height: 1;
-
     @include mq("md") {
         font-size: rem(40);
     }
@@ -22,7 +21,6 @@
     font-family: 'Noto Sans JP',sans-serif;
     line-height: 1;
     color: $color-green;
-
     @include mq("md") {
         margin-top: rem(8);
     }

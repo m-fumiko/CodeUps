@@ -164,16 +164,19 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
         // 閉じるボタンをクリックしたらモーダルを閉じる
         close.on("click", function () {
             $(this).closest(".gallery-modal__item").removeClass("is-open");
+            $('body').css('overflow', '');
         });
         // 新しいgallery__itemに対するクリックイベントを設定
         $(".gallery__items").on("click", ".gallery__item", function () {
             const target = $(this).data("target");
             $(`#gallery-modal-${target}`).addClass("is-open");
+            $('body').css('overflow', 'hidden');
         });
     });
 
     // タブ
     $(function () {
+        // タブクリックイベント
         $('.js-tab-menu').on('click', function () {
             $('.js-tab-menu').removeClass('is-active');
             $('.js-tab-content').removeClass('is-active');
@@ -181,6 +184,21 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
             var number = $(this).data("number");
             $('#' + number).addClass('is-active');
         });
+
+        // URLのクエリパラメータをチェック
+        function getQueryParam(param) {
+            var urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(param);
+        }
+
+        var tab = getQueryParam('tab');
+        if (tab) {
+            // タブをアクティブにする
+            $('.js-tab-menu').removeClass('is-active');
+            $('.js-tab-content').removeClass('is-active');
+            $('.js-tab-menu[data-number="' + tab + '"]').addClass('is-active');
+            $('#' + tab).addClass('is-active');
+        }
     });
 
     // アコーディオン
@@ -194,6 +212,7 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
             "block"
         );
     });
+
     // サブメニュー三角
     $(function() {
         $('.blog-archive__year').on('click',function (){

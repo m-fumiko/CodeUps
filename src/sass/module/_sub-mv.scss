@@ -3,7 +3,6 @@
 .sub-mv {
     position: relative;
     height: rem(460);
-
     @include mq("md") {
         height: rem(548);
     }
@@ -24,7 +23,6 @@
     color: $color-white;
     text-transform: capitalize;
     white-space: nowrap;
-
     @include mq("md") {
         top: 59%;
         font-size: rem(80);

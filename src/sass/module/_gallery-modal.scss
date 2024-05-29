@@ -47,7 +47,6 @@
 .gallery-modal__item:nth-of-type(6n+1) .gallery-modal__img img,
 .gallery-modal__item:nth-of-type(6n+6) .gallery-modal__img img {
     aspect-ratio: 345/523;
-
     @include mq("md") {
         margin: auto;
         max-height: rem(746);

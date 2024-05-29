@@ -16,7 +16,6 @@
     background-position: center;
     background-size: contain;
     z-index: -1;
-
     @include mq("md") {
         top: rem(-74);
         left: calc(50% - min(49vw, rem(620)));
@@ -37,7 +36,6 @@
 .terms-of-service__title {
     font-size: rem(24);
     font-weight: $medium;
-
     @include mq("md") {
         font-size: rem(32);
     }

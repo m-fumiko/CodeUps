@@ -22,7 +22,6 @@
 .gallery__items {
     display: grid;
     gap: rem(8);
-
     @include mq("md") {
         grid-template-columns: repeat(11, 1fr);
         grid-auto-flow: dense;
@@ -65,7 +64,6 @@
 .gallery__item:nth-of-type(6n+1) img,
 .gallery__item:nth-of-type(6n+6) img {
     aspect-ratio: 345/523;
-
     @include mq("md") {
         aspect-ratio: 492/746;
     }

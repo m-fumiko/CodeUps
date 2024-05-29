@@ -17,7 +17,6 @@
     background-position: center;
     background-size: contain;
     z-index: 0;
-
     @include mq("md") {
         top: rem(-35);
         left: calc(50% - min(49vw, rem(540)));
@@ -38,7 +37,6 @@
     padding-left: rem(40);
     font-size: rem(80);
     letter-spacing: 0.5em;
-
     @include mq("md") {
         padding-left: rem(78);
         font-size: rem(160);
@@ -48,7 +46,6 @@
 .not-found__text {
     margin-top: rem(-17);
     font-size: rem(16);
-
     @include mq("md") {
         margin-top: 0;
     }
@@ -57,7 +54,6 @@
 .not-found____button-wrapper {
     margin-top: rem(40);
     text-align: center;
-
     @include mq("md") {
         margin-top: rem(80);
     }

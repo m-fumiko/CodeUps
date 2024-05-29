@@ -4,7 +4,6 @@
     height: rem(80);
     background-color: rgba(40, 47, 53, 0.68);
     transition: background-color .3s;
-
     @include mq("md") {
         height: rem(90);
     }
@@ -26,8 +25,6 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    // background-color: $color-green;
-
     @include mq("md") {
         padding-left: rem(40);
         padding-right: rem(20);
@@ -39,7 +36,6 @@
     width: 100%;
     height: inherit;
     z-index: 1000;
-
     @include mq("md") {
         max-width: rem(133);
     }

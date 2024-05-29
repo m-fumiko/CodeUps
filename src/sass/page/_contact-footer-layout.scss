@@ -2,7 +2,6 @@
 
 .contact-footer-layout {
     margin-top: rem(150);
-
     @include mq("md") {
         margin-top: rem(177);
     }

@@ -15,7 +15,6 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-
     @include mq("md") {
         top: rem(-71);
         left: calc(50% - min(49vw, rem(620)));
@@ -25,12 +24,7 @@
 }
 
 .about__content {
-    // margin-top: rem(48);
     position: relative;
-
-    @include mq("md") {
-        // margin-top: rem(147);
-    }
 }
 
 .about__img-wrap {
@@ -77,7 +71,6 @@
     display: block;
     object-fit: cover;
     aspect-ratio: 345/228;
-
     @include mq("md") {
         aspect-ratio: 880/581;
     }
@@ -100,7 +93,6 @@
     font-weight: $regular;
     line-height: 1;
     color: $color-white;
-
     @include mq("md") {
         top: 31%;
         left: 19%;
@@ -119,7 +111,6 @@
     font-weight: $regular;
     font-family: 'Noto Sans JP', sans-serif;
     line-height: calc(24/16);
-
     @include mq("md") {
         margin-top: 0;
         position: absolute;
@@ -134,7 +125,6 @@
 .about__title {
     margin-top: rem(40);
     text-align: center;
-
     @include mq("md") {
         margin-top: rem(120);
     }
@@ -142,7 +132,6 @@
 
 .about__gallery {
     margin-top: rem(43);
-
     @include mq("md") {
         margin-top: rem(85);
     }

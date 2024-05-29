@@ -32,7 +32,6 @@
     letter-spacing: 0.54em;
     text-indent: 0.54em;
     text-transform: uppercase;
-
     @include mq("md") {
         font-size: rem(80);
     }
@@ -43,7 +42,6 @@
     font-size: rem(20);
     font-weight: $regular;
     line-height: calc(33/20);
-
     @include mq(md) {
         margin-top: rem(10);
         font-size: prem(35);
